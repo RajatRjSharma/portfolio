@@ -238,11 +238,12 @@
   }
 
   .resume-body-right {
+    max-height: 56vh;
     flex-basis: 90%;
     overflow-y: auto;
   }
 
-  .left-text {
+  .left-title span {
     display: none;
   }
 
