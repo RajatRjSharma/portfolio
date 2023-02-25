@@ -223,3 +223,45 @@
 .skill {
   color: var(--black) !important;
 }
+
+@media screen and (max-width: 1110px) {
+}
+
+@media screen and (max-width: 910px) {
+}
+
+@media screen and (max-width: 810px) {
+}
+
+@media screen and (max-width: 375px) {
+  .resume-body-left {
+    flex-basis: 10%;
+    flex-direction: row !important;
+    border: none;
+  }
+
+  .resume-body-right {
+    flex-basis: 90%;
+    overflow-y: auto;
+  }
+
+  .left-text {
+    display: none;
+  }
+
+  .resume-body {
+    flex-wrap: wrap;
+    margin: 15px;
+    padding: 10px;
+  }
+
+  .right-title-2-level {
+    border-radius: 10px;
+    width: 100px;
+    height: 20px;
+  }
+
+  .resume-parent {
+    width: 90%;
+  }
+}

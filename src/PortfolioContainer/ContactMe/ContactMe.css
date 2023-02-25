@@ -98,3 +98,34 @@ form {
   align-items: center;
   justify-content: center;
 }
+
+@media screen and (max-width: 1110px) {
+}
+
+@media screen and (max-width: 910px) {
+}
+
+@media screen and (max-width: 810px) {
+}
+
+@media screen and (max-width: 375px) {
+  .contactme-body {
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 15px;
+    padding: 10px;
+  }
+
+  .contactme-parent {
+    width: 90%;
+  }
+
+  .contactme-body h1 {
+    width: 100%;
+    text-align: center !important;
+  }
+
+  .contactme-body form {
+    width: 80%;
+  }
+}
