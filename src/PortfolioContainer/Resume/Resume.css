@@ -231,9 +231,6 @@
 }
 
 @media screen and (max-width: 810px) {
-}
-
-@media screen and (max-width: 375px) {
   .resume-body-left {
     flex-basis: 10%;
     flex-direction: row !important;
@@ -264,4 +261,7 @@
   .resume-parent {
     width: 90%;
   }
+}
+
+@media screen and (max-width: 375px) {
 }

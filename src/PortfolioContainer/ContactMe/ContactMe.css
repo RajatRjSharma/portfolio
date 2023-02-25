@@ -106,9 +106,6 @@ form {
 }
 
 @media screen and (max-width: 810px) {
-}
-
-@media screen and (max-width: 375px) {
   .contactme-body {
     width: 100%;
     flex-wrap: wrap;
@@ -128,4 +125,7 @@ form {
   .contactme-body form {
     width: 80%;
   }
+}
+
+@media screen and (max-width: 375px) {
 }
