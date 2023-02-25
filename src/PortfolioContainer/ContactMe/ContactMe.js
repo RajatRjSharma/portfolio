@@ -15,7 +15,7 @@ export default function ContactMe() {
         "service_19mf5oh",
         "template_jnz08gs",
         form.current,
-        "F5Jdb-gpz4oSnhLq"
+        "F5Jdb-gpz4oSnhLqi"
       )
       .then(
         (result) => {
