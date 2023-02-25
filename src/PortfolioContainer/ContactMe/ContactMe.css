@@ -63,6 +63,18 @@
   color: var(--dark-orange);
 }
 
+.contactme-body h1 {
+  width: 40%;
+}
+
+.contactme-body form {
+  width: 60%;
+}
+
+.form-group {
+  width: 100% !important;
+}
+
 .no-border {
   border: 1px solid var(--dark-orange);
   box-shadow: none;
