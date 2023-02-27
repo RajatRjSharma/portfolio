@@ -134,6 +134,8 @@
   .profile-options {
     display: flex;
     justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 20px;
   }
 
   .profile-details {

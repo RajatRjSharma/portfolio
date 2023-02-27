@@ -1,14 +1,17 @@
-import { React, useRef } from "react";
+import { React, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./ContactMe.css";
+import { ClockLoader } from "react-spinners";
 
 export default function ContactMe() {
   const form = useRef();
+  let [loading, setLoading] = useState(false);
 
   function sendEmail(e) {
     e.preventDefault();
+    setLoading(true);
 
     emailjs
       .sendForm(
@@ -19,6 +22,7 @@ export default function ContactMe() {
       )
       .then(
         (result) => {
+          setLoading(false);
           if (result.text === "OK") {
             toast.success("Message submited successfully");
           } else {
@@ -26,6 +30,7 @@ export default function ContactMe() {
           }
         },
         (error) => {
+          setLoading(false);
           console.log(error.text);
           toast.error("Fail to submit message, Please try after sometime.!");
         }
@@ -100,6 +105,19 @@ export default function ContactMe() {
         pauseOnHover
         theme="light"
       />
+      {loading ? (
+        <div className="loader">
+          <ClockLoader
+            color={"#333333"}
+            loading={true}
+            size={50}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
+        </div>
+      ) : (
+        <div></div>
+      )}
     </div>
   );
 }

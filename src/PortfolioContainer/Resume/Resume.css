@@ -235,12 +235,16 @@
     flex-basis: 10%;
     flex-direction: row !important;
     border: none;
+    margin: 5px 2.5px 5px 2.5px;
+    padding: 5px;
   }
 
   .resume-body-right {
-    max-height: 56vh;
+    max-height: 50vh;
     flex-basis: 90%;
     overflow-y: auto;
+    margin: 5px 2.5px 5px 2.5px;
+    padding: 5px;
   }
 
   .left-title span {
@@ -249,7 +253,7 @@
 
   .resume-body {
     flex-wrap: wrap;
-    margin: 15px;
+    margin: 10px;
     padding: 10px;
   }
 
@@ -261,6 +265,25 @@
 
   .resume-parent {
     width: 90%;
+  }
+
+  .left-title:hover {
+    border-radius: 15px 15px 15px 15px;
+  }
+
+  .left-title-select {
+    border-radius: 15px 15px 15px 15px;
+  }
+
+  .left-title i {
+    margin: 1px;
+    padding: 1px;
+    width: fit-content;
+  }
+
+  .right-object {
+    margin: 2.5px;
+    padding: 2.5px 5px 2.5px 5px;
   }
 }
 
