@@ -258,8 +258,9 @@
 
   .resume-body {
     flex-wrap: wrap;
-    margin: 10px;
+    margin: 15px;
     padding: 10px;
+    width: 100%;
   }
 
   .right-title-2-level {
