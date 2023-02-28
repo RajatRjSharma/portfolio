@@ -39,6 +39,9 @@ export default function Resume() {
     document
       .getElementById(forth + "-tile")
       .classList.remove("left-title-select");
+    document
+      .getElementById("resume-body-right")
+      .scroll({ top: 0, behavior: "smooth" });
   }
 
   React.useEffect(() => {
@@ -90,7 +93,7 @@ export default function Resume() {
               <span className="left-text">Projects</span>
             </div>
           </div>
-          <div className="resume-body-right">
+          <div id="resume-body-right" className="resume-body-right">
             <div id="work-history">
               <div className="right-object">
                 <div className="right-title">
