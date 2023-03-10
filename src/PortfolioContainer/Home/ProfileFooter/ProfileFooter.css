@@ -1,4 +1,4 @@
-.footer-container {
+.profileFooter-container {
   height: 17.8%;
   width: 100%;
   overflow: hidden;
@@ -6,19 +6,19 @@
   justify-content: center;
 }
 
-.footer-parent {
+.profileFooter-parent {
   width: 100%;
   height: 100%;
   max-width: 1920px;
 }
 
-.footer-parent img {
+.profileFooter-parent img {
   max-width: 100%;
   height: 130px;
 }
 
 @media only screen and (max-width: 1110px) {
-  .footer-parent {
+  .profileFooter-parent {
     display: flex;
     align-items: flex-end;
   }

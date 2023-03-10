@@ -1,18 +1,18 @@
 import React from "react";
-import "./Footer1.css";
+import "./Footer.css";
 
-export default function Footer1() {
+export default function Footer() {
   return (
-    <div className="footer11-container">
-      <div className="footer1-container">
-        <div className="footer1-parent">
+    <div className="footer-container">
+      <div className="footer-container">
+        <div className="footer-parent">
           <img
             src={require("../../assets/Home/shape-bg.png")}
             alt="no internet connection"
           />
         </div>
       </div>
-      <div className="footer11-body">
+      <div className="footer-body">
         <span>Thank You for Visit </span>
         <div className="colz">
           <div className="colz-icon">

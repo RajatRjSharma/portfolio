@@ -1,11 +1,11 @@
-.footer11-container {
+.footer-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: darkslategrey;
 }
 
-.footer11-body {
+.footer-body {
   display: block;
   height: 5vh;
   display: flex;
@@ -15,20 +15,20 @@
   color: var(--white);
 }
 
-.footer1-container {
+.footer-container {
   width: 100%;
   overflow: hidden;
   display: flex;
   justify-content: center;
 }
 
-.footer1-parent {
+.footer-parent {
   width: 100%;
   height: 100%;
   max-width: 1920px;
 }
 
-.footer1-parent img {
+.footer-parent img {
   max-width: 100%;
   height: 130px;
   -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
@@ -39,7 +39,7 @@
 }
 
 @media only screen and (max-width: 1110px) {
-  .footer1-parent {
+  .footer-parent {
     display: flex;
     align-items: flex-end;
   }

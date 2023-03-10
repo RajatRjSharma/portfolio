@@ -1,13 +1,15 @@
-import React from "react";
+import React, { Component } from "react";
 import Profile from "./Profile/Profile";
-import Footer from "./Footer/Footer";
+import ProfileFooter from "./ProfileFooter/ProfileFooter";
 import "./Home.css";
 
-export default function Home() {
-  return (
-    <div className="home-container">
-      <Profile />
-      <Footer />
-    </div>
-  );
+export default class Home extends Component {
+  render() {
+    return (
+      <div className="home-container">
+        <Profile />
+        <ProfileFooter />
+      </div>
+    );
+  }
 }

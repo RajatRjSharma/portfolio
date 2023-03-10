@@ -1,10 +1,10 @@
 import React from "react";
-import "./Footer.css";
+import "./ProfileFooter.css";
 
-export default function Footer() {
+export default function ProfileprofileFooter() {
   return (
-    <div className="footer-container">
-      <div className="footer-parent">
+    <div className="profileFooter-container">
+      <div className="profileFooter-parent">
         <img
           src={require("../../../assets/Home/shape-bg.png")}
           alt="no internet connection"

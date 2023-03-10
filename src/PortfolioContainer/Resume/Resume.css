@@ -70,7 +70,7 @@
 .left-title {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   text-align: left;
   margin: 5px;
   padding: 5px 10px 5px 10px;
@@ -123,7 +123,7 @@
 .right-title-1 {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   color: var(--dark-orange);
   font-size: large;
   font-weight: 600;
@@ -154,7 +154,7 @@
 
 .right-desc-1 {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   margin: 2px 0 2px 0;
 }
 
