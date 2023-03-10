@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 
-export default function Footer() {
+export default function Footer({ links }) {
   return (
     <div className="footer-container">
       <div className="footer-container">
@@ -17,21 +17,21 @@ export default function Footer() {
         <div className="colz">
           <div className="colz-icon">
             <a
-              href="https://github.com/rajatrjsharma"
+              href={links && links.github ? links.github : "#"}
               target="_blank"
               rel="noopener noreferrer"
             >
               <i className="fa fa-github-square"></i>
             </a>
             <a
-              href="https://www.linkedin.com/in/rajatrjsharma"
+              href={links && links.linkedin ? links.linkedin : "#"}
               target="_blank"
               rel="noopener noreferrer"
             >
               <i className="fa fa-linkedin-square"></i>
             </a>
             <a
-              href="https://www.instagram.com/rj_rajatsharma/"
+              href={links && links.instagram ? links.instagram : "#"}
               target="_blank"
               rel="noopener noreferrer"
             >

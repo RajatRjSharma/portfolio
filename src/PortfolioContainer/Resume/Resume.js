@@ -99,23 +99,23 @@ export default function Resume({ resume }) {
           </div>
           <div id="resume-body-right" className="resume-body-right">
             <div id="work-history">
-              {resume.workHistory.map((history, indexHistory) => {
+              {resume?.workHistory.map((history, indexHistory) => {
                 return (
                   <div className="right-object" key={indexHistory}>
                     <div className="right-title">
                       <div className="right-title-1">
                         <i className="fa fa-circle"></i>
                         <span className="left-text">
-                          {history.role}{" "}
-                          <span className="left-text-sub">{history.place}</span>
+                          {history?.role}{" "}
+                          <span className="left-text-sub">{history?.place}</span>
                         </span>
                       </div>
                       <div className="right-title-2">
-                        {history.startDate} - {history.endDate}
+                        {history?.startDate} - {history?.endDate}
                       </div>
                     </div>
                     <div className="right-desc">
-                      {history.description.map((desc, indexDesc) => {
+                      {history?.description.map((desc, indexDesc) => {
                         return (
                           <div className="right-desc-1" key={indexDesc}>
                             <i className="fa fa-circle"></i>
@@ -129,23 +129,23 @@ export default function Resume({ resume }) {
               })}
             </div>
             <div id="education">
-              {resume.education.map((educ, indexEduc) => {
+              {resume?.education.map((educ, indexEduc) => {
                 return (
                   <div className="right-object" key={indexEduc}>
                     <div className="right-title">
                       <div className="right-title-1">
                         <i className="fa fa-circle"></i>
                         <span className="left-text">
-                          {educ.institute}{" "}
-                          <span className="left-text-sub">{educ.course}</span>
+                          {educ?.institute}{" "}
+                          <span className="left-text-sub">{educ?.course}</span>
                         </span>
                       </div>
                       <div className="right-title-2">
-                        {educ.startDate} - {educ.endDate}
+                        {educ?.startDate} - {educ?.endDate}
                       </div>
                     </div>
                     <div className="right-desc">
-                      {educ.description.map((desc, indexDesc) => {
+                      {educ?.description.map((desc, indexDesc) => {
                         return (
                           <div className="right-desc-1" key={indexDesc}>
                             <i className="fa fa-circle"></i>
@@ -159,21 +159,21 @@ export default function Resume({ resume }) {
               })}
             </div>
             <div id="programming-skills">
-              {resume.programmingSkills.map((skill, indexSkill) => {
+              {resume?.programmingSkills.map((skill, indexSkill) => {
                 return (
                   <div className="right-object" key={indexSkill}>
                     <div className="right-title">
                       <div className="right-title-1">
                         <i className="fa fa-circle skill"></i>
                         <span className="left-text">
-                          {skill.skill} <span className="left-text-sub"></span>
+                          {skill?.skill} <span className="left-text-sub"></span>
                         </span>
                       </div>
                       <div className="right-title-2-level">
                         <span
                           className={
                             "right-title-2-level-1 right-title-2-level-1-" +
-                            skill.scale
+                            skill?.scale
                           }
                         ></span>
                       </div>
@@ -183,39 +183,39 @@ export default function Resume({ resume }) {
               })}
             </div>
             <div id="projects">
-              {resume.projects.map((project, indexProject) => {
+              {resume?.projects.map((project, indexProject) => {
                 return (
                   <div className="right-object" key={indexProject}>
                     <div className="right-title">
-                      {project.projectTitle.map((title, indexTitle) => {
+                      {project?.projectTitle.map((title, indexTitle) => {
                         return (
                           <div className="right-title-1" key={indexTitle}>
                             <i className="fa fa-circle"></i>
                             <span className="left-text">
-                              {title.link.length > 0 ? (
+                              {title?.link.length > 0 ? (
                                 <a
-                                  href={title.link}
+                                  href={title?.link}
                                   target="_blank"
                                   rel="noopener noreferrer"
                                 >
-                                  {title.title}
+                                  {title?.title}
                                 </a>
                               ) : (
-                                <>{title.title}</>
+                                <>{title?.title}</>
                               )}{" "}
                               <span className="left-text-sub">
-                                {title.subTitle}
+                                {title?.subTitle}
                               </span>
                             </span>
                           </div>
                         );
                       })}
                       <div className="right-title-2">
-                        {project.startDate} - {project.endDate}
+                        {project?.startDate} - {project?.endDate}
                       </div>
                     </div>
                     <div className="right-desc">
-                      {project.description.map((desc, indexDesc) => {
+                      {project?.description.map((desc, indexDesc) => {
                         return (
                           <div className="right-desc-1" key={indexDesc}>
                             <i className="fa fa-circle"></i>

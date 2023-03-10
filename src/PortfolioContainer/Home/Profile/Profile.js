@@ -16,21 +16,21 @@ export default function Profile({ profile }) {
           <div className="colz">
             <div className="colz-icon">
               <a
-                href={profile.links.github}
+                href={profile?.links?.github ? profile.links.github : "#"}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="fa fa-github-square"></i>
               </a>
               <a
-                href={profile.links.linkedin}
+                href={profile?.links?.linkedin ? profile.links.linkedin : "#"}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="fa fa-linkedin-square"></i>
               </a>
               <a
-                href={profile.links.instagram}
+                href={profile?.links?.instagram ? profile.links.instagram : "#"}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -42,7 +42,9 @@ export default function Profile({ profile }) {
             <span className="primary-text">
               {" "}
               Hello, I'm{" "}
-              <span className="highlighted-text">{profile.fullname}</span>
+              <span className="highlighted-text">
+                {profile?.fullname ? profile.fullname : "Rajat Kumar Sharma"}
+              </span>
             </span>
           </div>
           <div className="profile-details-role">
@@ -52,14 +54,14 @@ export default function Profile({ profile }) {
                 {" "}
                 <Typical
                   loop={Infinity}
-                  steps={profile.profileSkills.skills
-                    .join(`,${profile.profileSkills.skillTime},`)
+                  steps={profile?.profileSkills?.skills
+                    .join(`,${profile?.profileSkills?.skillTime},`)
                     .split(",")
                     .map((value) => (+value ? +value : value))}
                 />
               </h1>
               <span className="profile-role-tagline">
-                {profile.profileTagline}
+                {profile?.profileTagline}
               </span>
             </span>
           </div>

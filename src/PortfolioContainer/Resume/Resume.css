@@ -298,6 +298,10 @@
     margin: 2.5px;
     padding: 2.5px 5px 2.5px 5px;
   }
+
+  .resume-parent-border {
+    border-radius: 2%;
+  }
 }
 
 @media screen and (max-width: 375px) {

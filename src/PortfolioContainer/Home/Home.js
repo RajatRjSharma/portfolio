@@ -239,6 +239,29 @@ export default class Home extends Component {
     ],
   };
 
+  emailConfig = {
+    serviceId: "service_19mf5oh",
+    templateId: "template_jnz08gs",
+    publickey: "F5Jdb-gpz4oSnhLqi",
+  };
+
+  toastConfig = {
+    position: "top-center",
+    autoClose: 3000,
+    hideProgressBar: false,
+    newestOnTop: false,
+    rtl: false,
+    theme: "light",
+  };
+
+  clockLoaderConfig = {
+    color: "#333333",
+    loading: true,
+    size: 50,
+    ariaLabel: "Loading Spinner",
+    dataTestid: "loader",
+  };
+
   render() {
     return (
       <>
@@ -247,8 +270,12 @@ export default class Home extends Component {
           <ProfileFooter />
         </div>
         <Resume resume={this.resume} />
-        <ContactMe />
-        <Footer />
+        <ContactMe
+          emailConfig={this.emailConfig}
+          toastConfig={this.toastConfig}
+          clockLoaderConfig={this.clockLoaderConfig}
+        />
+        <Footer links={this.profile.links} />
       </>
     );
   }

@@ -5,7 +5,11 @@ import "react-toastify/dist/ReactToastify.css";
 import "./ContactMe.css";
 import { ClockLoader } from "react-spinners";
 
-export default function ContactMe() {
+export default function ContactMe({
+  emailConfig,
+  toastConfig,
+  clockLoaderConfig,
+}) {
   const form = useRef();
   let [loading, setLoading] = useState(false);
 
@@ -15,10 +19,10 @@ export default function ContactMe() {
 
     emailjs
       .sendForm(
-        "service_19mf5oh",
-        "template_jnz08gs",
+        emailConfig.serviceId,
+        emailConfig.templateId,
         form.current,
-        "F5Jdb-gpz4oSnhLqi"
+        emailConfig.publickey
       )
       .then(
         (result) => {
@@ -37,6 +41,7 @@ export default function ContactMe() {
       );
     e.target.reset();
   }
+
   return (
     <div id="contact-form" className="contactme-container">
       <div className="contactme-parent">
@@ -94,29 +99,43 @@ export default function ContactMe() {
         </div>
       </div>
       <ToastContainer
-        position="top-center"
-        autoClose={3000}
-        hideProgressBar={false}
-        newestOnTop={false}
+        position={toastConfig?.position ? toastConfig.position : "top-center"}
+        autoClose={toastConfig?.autoClose ? toastConfig.autoClose : 3000}
+        hideProgressBar={
+          toastConfig?.hideProgressBar ? toastConfig.hideProgressBar : false
+        }
+        newestOnTop={toastConfig?.newestOnTop ? toastConfig.newestOnTop : false}
         closeOnClick
-        rtl={false}
+        rtl={toastConfig?.rtl ? toastConfig.rtl : false}
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        theme="light"
+        theme={toastConfig?.theme ? toastConfig.theme : "light"}
       />
       {loading ? (
         <div className="loader">
           <ClockLoader
-            color={"#333333"}
-            loading={true}
-            size={50}
-            aria-label="Loading Spinner"
-            data-testid="loader"
+            color={
+              clockLoaderConfig?.color ? clockLoaderConfig.color : "#333333"
+            }
+            loading={
+              clockLoaderConfig?.loading ? clockLoaderConfig.loading : true
+            }
+            size={clockLoaderConfig?.size ? clockLoaderConfig.size : 50}
+            aria-label={
+              clockLoaderConfig?.ariaLabel
+                ? clockLoaderConfig.ariaLabel
+                : "Loading Spinner"
+            }
+            data-testid={
+              clockLoaderConfig?.dataTestid
+                ? clockLoaderConfig.dataTestid
+                : "loader"
+            }
           />
         </div>
       ) : (
-        <div></div>
+        <></>
       )}
     </div>
   );
