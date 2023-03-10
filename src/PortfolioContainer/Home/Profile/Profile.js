@@ -2,7 +2,7 @@ import React from "react";
 import Typical from "react-typical";
 import "./Profile.css";
 
-export default function Profile() {
+export default function Profile({ profile }) {
   function scrollToContact() {
     document.getElementById("contact-form").scrollIntoView({
       behavior: "smooth",
@@ -16,21 +16,21 @@ export default function Profile() {
           <div className="colz">
             <div className="colz-icon">
               <a
-                href="https://github.com/rajatrjsharma"
+                href={profile.links.github}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="fa fa-github-square"></i>
               </a>
               <a
-                href="https://www.linkedin.com/in/rajatrjsharma"
+                href={profile.links.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="fa fa-linkedin-square"></i>
               </a>
               <a
-                href="https://www.instagram.com/rj_rajatsharma/"
+                href={profile.links.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -42,7 +42,7 @@ export default function Profile() {
             <span className="primary-text">
               {" "}
               Hello, I'm{" "}
-              <span className="highlighted-text">Rajat Kumar Sharma</span>
+              <span className="highlighted-text">{profile.fullname}</span>
             </span>
           </div>
           <div className="profile-details-role">
@@ -52,31 +52,19 @@ export default function Profile() {
                 {" "}
                 <Typical
                   loop={Infinity}
-                  steps={[
-                    "Software Developer",
-                    1000,
-                    "Full Stack Developer",
-                    1000,
-                    "Angular Dev",
-                    1000,
-                    "Play Framework",
-                    1000,
-                    "React Dev",
-                    1000,
-                    "Spring Boot",
-                    1000,
-                  ]}
+                  steps={profile.profileSkills.skills
+                    .join(`,${profile.profileSkills.skillTime},`)
+                    .split(",")
+                    .map((value) => (+value ? +value : value))}
                 />
               </h1>
               <span className="profile-role-tagline">
-                Knack of building applications with front and back end
-                operations.
+                {profile.profileTagline}
               </span>
             </span>
           </div>
           <div className="profile-options">
             <button className="btn primary-btn" onClick={scrollToContact}>
-              {""}
               Contact Me
             </button>
             <a
