@@ -142,7 +142,7 @@
 
 .right-title-2 {
   font-size: 10px;
-  padding: 1px 5px 1px 5px;
+  padding: 0px 7px 0px 7px;
   color: var(--white);
   background-color: var(--dark-orange);
   border-radius: 15px;
@@ -187,6 +187,13 @@
   min-height: 100%;
   background-color: var(--black);
   display: inline-block;
+  min-width: 100%;
+  transition: min-width 0.15s ease-out;
+}
+
+.right-title-2-level-1:hover {
+  min-width: 100%;
+  transition: min-width 0.15s ease-in;
 }
 
 .right-title-2-level-1-10 {
