@@ -6,7 +6,7 @@ export default function ProfileprofileFooter() {
     <div className="profileFooter-container">
       <div className="profileFooter-parent">
         <img
-          src={require("../../../assets/Home/shape-bg.png")}
+          src={require("../../../assets/profile/shape-bg.png")}
           alt="no internet connection"
         />
       </div>
