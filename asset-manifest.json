@@ -1,7 +1,9 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.83933251.css",
-    "main.js": "/portfolio/static/js/main.d7106c39.js",
+    "main.css": "/portfolio/static/css/main.7893830a.css",
+    "main.js": "/portfolio/static/js/main.3fbf2a9e.js",
+    "static/media/fa-solid-900.ttf": "/portfolio/static/media/fa-solid-900.2877d54f94f30c5d563c.ttf",
+    "static/media/fa-brands-400.ttf": "/portfolio/static/media/fa-brands-400.13e40630e5866f777de8.ttf",
     "static/media/Poppins-Thin.ttf": "/portfolio/static/media/Poppins-Thin.a61eaf4c2e4d44d6db6a.ttf",
     "static/media/Poppins-Light.ttf": "/portfolio/static/media/Poppins-Light.f41b63c0bb0963ace821.ttf",
     "static/media/Poppins-Regular.ttf": "/portfolio/static/media/Poppins-Regular.8081832fc5cfbf634aa6.ttf",
@@ -9,13 +11,19 @@
     "static/media/Poppins-SemiBold.ttf": "/portfolio/static/media/Poppins-SemiBold.cce5625b56ec678e4202.ttf",
     "static/media/Poppins-Bold.ttf": "/portfolio/static/media/Poppins-Bold.404e299be26d78e66794.ttf",
     "static/media/Poppins-ExtraBold.ttf": "/portfolio/static/media/Poppins-ExtraBold.4ed78cd5d64af4efc3c7.ttf",
+    "static/media/fa-solid-900.woff2": "/portfolio/static/media/fa-solid-900.bdb9e23299f9d1320a8b.woff2",
+    "static/media/fa-brands-400.woff2": "/portfolio/static/media/fa-brands-400.7be2266f1be21c44ecd4.woff2",
+    "static/media/fa-regular-400.ttf": "/portfolio/static/media/fa-regular-400.146404900f7550a9719d.ttf",
     "static/media/profilephoto.jpg": "/portfolio/static/media/profilephoto.056576ee9b5bb94d870e.jpg",
+    "static/media/fa-regular-400.woff2": "/portfolio/static/media/fa-regular-400.8bedd7cfa43a6c358cdd.woff2",
+    "static/media/fa-v4compatibility.ttf": "/portfolio/static/media/fa-v4compatibility.6c0a7b774ffa1cf0a059.ttf",
+    "static/media/fa-v4compatibility.woff2": "/portfolio/static/media/fa-v4compatibility.497d535001197a9c5b38.woff2",
     "index.html": "/portfolio/index.html",
-    "main.83933251.css.map": "/portfolio/static/css/main.83933251.css.map",
-    "main.d7106c39.js.map": "/portfolio/static/js/main.d7106c39.js.map"
+    "main.7893830a.css.map": "/portfolio/static/css/main.7893830a.css.map",
+    "main.3fbf2a9e.js.map": "/portfolio/static/js/main.3fbf2a9e.js.map"
   },
   "entrypoints": [
-    "static/css/main.83933251.css",
-    "static/js/main.d7106c39.js"
+    "static/css/main.7893830a.css",
+    "static/js/main.3fbf2a9e.js"
   ]
 }
