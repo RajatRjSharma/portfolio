@@ -20,21 +20,21 @@ export default function Profile({ profile }) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fa fa-github-square"></i>
+                <i className="fab fa-github"></i>
               </a>
               <a
                 href={profile?.links?.linkedin ? profile.links.linkedin : "#"}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fa fa-linkedin-square"></i>
+                <i className="fab fa-linkedin"></i>
               </a>
               <a
                 href={profile?.links?.instagram ? profile.links.instagram : "#"}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fa fa-instagram"></i>
+                <i className="fab fa-instagram"></i>
               </a>
             </div>
           </div>

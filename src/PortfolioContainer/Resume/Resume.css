@@ -135,6 +135,26 @@
   margin: 0 20px 0 0;
 }
 
+.prog-skill i {
+  color: var(--black);
+  font-size: x-large;
+  width: 40px;
+  text-align: center;
+  margin: 0;
+}
+
+.prog-skill i:hover {
+  transform: scale(1.2);
+}
+
+.prog-skill .fas {
+  color: var(--black);
+  font-size: smaller;
+  width: 40px;
+  text-align: center;
+  margin: 0;
+}
+
 .right-desc {
   margin-left: 30px;
   padding: 5px;

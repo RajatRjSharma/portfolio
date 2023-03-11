@@ -69,7 +69,7 @@ export default function Resume({ resume }) {
               onClick={() => handleClick("education")}
               id="education-tile"
             >
-              <i className="fa fa-graduation-cap"></i>
+              <i className="fas fa-graduation-cap"></i>
               <span className="left-text">Education</span>
             </div>
             <div
@@ -77,7 +77,7 @@ export default function Resume({ resume }) {
               onClick={() => handleClick("work-history")}
               id="work-history-tile"
             >
-              <i className="fa fa-history"></i>
+              <i className="fas fa-history"></i>
               <span className="left-text">Work History</span>
             </div>
             <div
@@ -85,7 +85,7 @@ export default function Resume({ resume }) {
               onClick={() => handleClick("programming-skills")}
               id="programming-skills-tile"
             >
-              <i className="fa fa-laptop"></i>
+              <i className="fas fa-laptop"></i>
               <span className="left-text">Programming Skills</span>
             </div>
             <div
@@ -93,7 +93,7 @@ export default function Resume({ resume }) {
               onClick={() => handleClick("projects")}
               id="projects-tile"
             >
-              <i className="fa fa-tasks"></i>
+              <i className="fas fa-tasks"></i>
               <span className="left-text">Projects</span>
             </div>
           </div>
@@ -104,10 +104,12 @@ export default function Resume({ resume }) {
                   <div className="right-object" key={indexHistory}>
                     <div className="right-title">
                       <div className="right-title-1">
-                        <i className="fa fa-circle"></i>
+                        <i className="fas fa-circle"></i>
                         <span className="left-text">
                           {history?.role}{" "}
-                          <span className="left-text-sub">{history?.place}</span>
+                          <span className="left-text-sub">
+                            {history?.place}
+                          </span>
                         </span>
                       </div>
                       <div className="right-title-2">
@@ -118,7 +120,7 @@ export default function Resume({ resume }) {
                       {history?.description.map((desc, indexDesc) => {
                         return (
                           <div className="right-desc-1" key={indexDesc}>
-                            <i className="fa fa-circle"></i>
+                            <i className="fas fa-circle"></i>
                             <span className="left-text">{desc}</span>
                           </div>
                         );
@@ -134,7 +136,7 @@ export default function Resume({ resume }) {
                   <div className="right-object" key={indexEduc}>
                     <div className="right-title">
                       <div className="right-title-1">
-                        <i className="fa fa-circle"></i>
+                        <i className="fas fa-circle"></i>
                         <span className="left-text">
                           {educ?.institute}{" "}
                           <span className="left-text-sub">{educ?.course}</span>
@@ -148,7 +150,7 @@ export default function Resume({ resume }) {
                       {educ?.description.map((desc, indexDesc) => {
                         return (
                           <div className="right-desc-1" key={indexDesc}>
-                            <i className="fa fa-circle"></i>
+                            <i className="fas fa-circle"></i>
                             <span className="left-text">{desc}</span>
                           </div>
                         );
@@ -163,8 +165,8 @@ export default function Resume({ resume }) {
                 return (
                   <div className="right-object" key={indexSkill}>
                     <div className="right-title">
-                      <div className="right-title-1">
-                        <i className="fa fa-circle skill"></i>
+                      <div className="right-title-1 prog-skill">
+                        <i className={skill?.icon}></i>
                         <span className="left-text">
                           {skill?.skill} <span className="left-text-sub"></span>
                         </span>
@@ -190,7 +192,7 @@ export default function Resume({ resume }) {
                       {project?.projectTitle.map((title, indexTitle) => {
                         return (
                           <div className="right-title-1" key={indexTitle}>
-                            <i className="fa fa-circle"></i>
+                            <i className="fas fa-circle"></i>
                             <span className="left-text">
                               {title?.link.length > 0 ? (
                                 <a
@@ -218,7 +220,7 @@ export default function Resume({ resume }) {
                       {project?.description.map((desc, indexDesc) => {
                         return (
                           <div className="right-desc-1" key={indexDesc}>
-                            <i className="fa fa-circle"></i>
+                            <i className="fas fa-circle"></i>
                             <span className="left-text">{desc}</span>
                           </div>
                         );
