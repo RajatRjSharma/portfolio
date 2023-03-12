@@ -7,42 +7,49 @@ export default function Resume({ resume }) {
   }
 
   function changeDisplay(value) {
-    let first = "work-history";
-    let second = "education";
-    let third = "programming-skills";
-    let forth = "projects";
+    let displayIdArray = [
+      "work-history",
+      "education",
+      "programming-skills",
+      "projects",
+      "certifications",
+    ];
 
     switch (value) {
       case "education":
-        first = "education";
-        second = "work-history";
+        displayIdArray[0] = displayIdArray.splice(1, 1, displayIdArray[0])[0];
         break;
       case "programming-skills":
-        first = "programming-skills";
-        third = "work-history";
+        displayIdArray[0] = displayIdArray.splice(2, 1, displayIdArray[0])[0];
         break;
       case "projects":
-        first = "projects";
-        forth = "work-history";
+        displayIdArray[0] = displayIdArray.splice(3, 1, displayIdArray[0])[0];
+        break;
+      case "certifications":
+        displayIdArray[0] = displayIdArray.splice(4, 1, displayIdArray[0])[0];
         break;
       default:
         break;
     }
 
-    document.getElementById(first).style.display = "block";
-    document.getElementById(first + "-tile").classList.add("left-title-select");
-    document.getElementById(second).style.display = "none";
-    document
-      .getElementById(second + "-tile")
-      .classList.remove("left-title-select");
-    document.getElementById(third).style.display = "none";
-    document
-      .getElementById(third + "-tile")
-      .classList.remove("left-title-select");
-    document.getElementById(forth).style.display = "none";
-    document
-      .getElementById(forth + "-tile")
-      .classList.remove("left-title-select");
+    displayIdArray.forEach((id, index) => {
+      if (index !== 0) {
+        document.getElementById(id).style.display = "none";
+        document
+          .getElementById(id + "-tile")
+          .classList.remove("left-title-select");
+        document.getElementById(id + "-tile").classList.add("left-title-hover");
+      } else {
+        document.getElementById(id).style.display = "block";
+        document
+          .getElementById(id + "-tile")
+          .classList.add("left-title-select");
+        document
+          .getElementById(id + "-tile")
+          .classList.remove("left-title-hover");
+      }
+    });
+
     document
       .getElementById("resume-body-right")
       .scroll({ top: 0, behavior: "smooth" });
@@ -90,6 +97,14 @@ export default function Resume({ resume }) {
             </div>
             <div
               className="left-title"
+              onClick={() => handleClick("certifications")}
+              id="certifications-tile"
+            >
+              <i className="fa-solid fa-certificate"></i>
+              <span className="left-text">Certifications</span>
+            </div>
+            <div
+              className="left-title"
               onClick={() => handleClick("projects")}
               id="projects-tile"
             >
@@ -99,7 +114,7 @@ export default function Resume({ resume }) {
           </div>
           <div id="resume-body-right" className="resume-body-right">
             <div id="work-history">
-              {resume?.workHistory.map((history, indexHistory) => {
+              {resume?.workHistory?.map((history, indexHistory) => {
                 return (
                   <div className="right-object" key={indexHistory}>
                     <div className="right-title">
@@ -117,7 +132,7 @@ export default function Resume({ resume }) {
                       </div>
                     </div>
                     <div className="right-desc">
-                      {history?.description.map((desc, indexDesc) => {
+                      {history?.description?.map((desc, indexDesc) => {
                         return (
                           <div className="right-desc-1" key={indexDesc}>
                             <i className="fas fa-circle"></i>
@@ -131,7 +146,7 @@ export default function Resume({ resume }) {
               })}
             </div>
             <div id="education">
-              {resume?.education.map((educ, indexEduc) => {
+              {resume?.education?.map((educ, indexEduc) => {
                 return (
                   <div className="right-object" key={indexEduc}>
                     <div className="right-title">
@@ -147,7 +162,7 @@ export default function Resume({ resume }) {
                       </div>
                     </div>
                     <div className="right-desc">
-                      {educ?.description.map((desc, indexDesc) => {
+                      {educ?.description?.map((desc, indexDesc) => {
                         return (
                           <div className="right-desc-1" key={indexDesc}>
                             <i className="fas fa-circle"></i>
@@ -161,7 +176,7 @@ export default function Resume({ resume }) {
               })}
             </div>
             <div id="programming-skills">
-              {resume?.programmingSkills.map((skill, indexSkill) => {
+              {resume?.programmingSkills?.map((skill, indexSkill) => {
                 return (
                   <div className="right-object" key={indexSkill}>
                     <div className="right-title">
@@ -185,16 +200,16 @@ export default function Resume({ resume }) {
               })}
             </div>
             <div id="projects">
-              {resume?.projects.map((project, indexProject) => {
+              {resume?.projects?.map((project, indexProject) => {
                 return (
                   <div className="right-object" key={indexProject}>
                     <div className="right-title">
-                      {project?.projectTitle.map((title, indexTitle) => {
+                      {project?.projectTitle?.map((title, indexTitle) => {
                         return (
                           <div className="right-title-1" key={indexTitle}>
                             <i className="fas fa-circle"></i>
                             <span className="left-text">
-                              {title?.link.length > 0 ? (
+                              {title?.link?.length > 0 ? (
                                 <a
                                   href={title?.link}
                                   target="_blank"
@@ -217,7 +232,7 @@ export default function Resume({ resume }) {
                       </div>
                     </div>
                     <div className="right-desc">
-                      {project?.description.map((desc, indexDesc) => {
+                      {project?.description?.map((desc, indexDesc) => {
                         return (
                           <div className="right-desc-1" key={indexDesc}>
                             <i className="fas fa-circle"></i>
@@ -225,6 +240,36 @@ export default function Resume({ resume }) {
                           </div>
                         );
                       })}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+            <div id="certifications">
+              {resume?.certifications?.map((certificate, certificateSkill) => {
+                return (
+                  <div className="right-object" key={certificateSkill}>
+                    <div className="right-title">
+                      <div className="right-title-1 cerfificate">
+                        <i className={certificate?.icon}></i>
+                        <span className="left-text">
+                          {certificate?.link?.length > 0 ? (
+                            <a
+                              href={certificate?.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              {certificate?.title}
+                            </a>
+                          ) : (
+                            <>{certificate?.title}</>
+                          )}{" "}
+                          <span className="left-text-sub ml-1">
+                            {certificate?.from}
+                          </span>
+                        </span>
+                      </div>
+                      <div className="right-title-2">{certificate?.date}</div>
                     </div>
                   </div>
                 );

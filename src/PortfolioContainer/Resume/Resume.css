@@ -76,7 +76,7 @@
   padding: 5px 10px 5px 10px;
 }
 
-.left-title:hover {
+.left-title-hover:hover {
   background-color: var(--black);
   opacity: 0.9;
   width: 85%;
@@ -135,12 +135,26 @@
   margin: 0 20px 0 0;
 }
 
+.right-title-1 i:hover {
+  transform: scale(1.2);
+}
+
 .prog-skill i {
   color: var(--black);
   font-size: x-large;
   width: 40px;
   text-align: center;
   margin: 0;
+}
+
+.cerfificate i {
+  width: 40px;
+  text-align: center;
+  margin: 0;
+}
+
+.cerfificate i:hover {
+  transform: scale(1.2);
 }
 
 .prog-skill i:hover {
@@ -183,6 +197,10 @@
   margin: 0 10px 0 0;
   top: 7px;
   position: relative;
+}
+
+.right-desc-1 i:hover {
+  transform: scale(1.2);
 }
 
 .left-text-sub {
@@ -283,6 +301,10 @@
     margin: 0 0 0 5px;
   }
 
+  .left-title {
+    padding: 5px 5px 5px 5px;
+  }
+
   .resume-body {
     flex-wrap: wrap;
     margin: 15px;
@@ -300,8 +322,9 @@
     width: 90%;
   }
 
-  .left-title:hover {
+  .left-title-hover:hover {
     border-radius: 15px 15px 15px 15px;
+    transform: scale(1);
   }
 
   .left-title-select {
@@ -309,9 +332,10 @@
   }
 
   .left-title i {
-    margin: 1px;
     padding: 1px;
     width: fit-content;
+    margin: 1px;
+    font-size: medium;
   }
 
   .right-object {
