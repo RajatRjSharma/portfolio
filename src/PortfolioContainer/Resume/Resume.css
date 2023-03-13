@@ -132,7 +132,8 @@
 .right-title-1 i {
   color: var(--dark-orange);
   font-size: smaller;
-  margin: 0 20px 0 0;
+  margin: 6px 20px 0 0;
+  align-self: normal;
 }
 
 .right-title-1 i:hover {
@@ -141,16 +142,24 @@
 
 .prog-skill i {
   color: var(--black);
-  font-size: x-large;
+  font-size: small;
   width: 40px;
   text-align: center;
   margin: 0;
+  margin-top: 9px;
+}
+
+.prog-skill .fab,
+.prog-skill .fa-brands {
+  font-size: x-large;
+  margin-top: 4px;
 }
 
 .cerfificate i {
   width: 40px;
   text-align: center;
   margin: 0;
+  margin-top: 6px;
 }
 
 .cerfificate i:hover {
@@ -159,14 +168,6 @@
 
 .prog-skill i:hover {
   transform: scale(1.2);
-}
-
-.prog-skill .fas {
-  color: var(--black);
-  font-size: smaller;
-  width: 40px;
-  text-align: center;
-  margin: 0;
 }
 
 .right-desc {
