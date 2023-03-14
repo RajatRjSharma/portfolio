@@ -258,13 +258,14 @@ export default function Resume({ resume }) {
                               href={certificate?.link}
                               target="_blank"
                               rel="noopener noreferrer"
+                              className="mr-1"
                             >
                               {certificate?.title}
                             </a>
                           ) : (
-                            <>{certificate?.title}</>
+                            <span className="mr-1">{certificate?.title}</span>
                           )}{" "}
-                          <span className="left-text-sub ml-1">
+                          <span className="left-text-sub">
                             {certificate?.from}
                           </span>
                         </span>

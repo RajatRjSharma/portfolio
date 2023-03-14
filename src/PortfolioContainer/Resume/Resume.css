@@ -143,7 +143,7 @@
 .prog-skill i {
   color: var(--black);
   font-size: small;
-  width: 40px;
+  width: 50px;
   text-align: center;
   margin: 0;
   margin-top: 9.5px;
@@ -156,9 +156,7 @@
 }
 
 .cerfificate i {
-  width: 40px;
-  text-align: center;
-  margin: 0;
+  margin-left: 20px;
   margin-top: 6px;
 }
 
@@ -348,17 +346,28 @@
     border-radius: 2%;
   }
 
+  .right-title-1 i {
+    margin: 6px 10px 0 0;
+  }
+
+  .right-desc {
+    margin-left: 20px;
+  }
+
   .prog-skill i {
-    margin-top: 7px;
+    width: 30px;
+    margin: 7px 10px 0 0;
   }
 
   .cerfificate i {
     margin-top: 5.5px;
+    margin-left: 10px;
   }
 
   .prog-skill .fab,
   .prog-skill .fa-brands {
-    margin-top: 1.5px;
+    width: 30px;
+    margin: 1.5px 10px 0 0;
   }
 }
 
