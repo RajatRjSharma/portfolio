@@ -347,7 +347,7 @@
   }
 
   .right-title-1 i {
-    margin: 6px 10px 0 0;
+    margin: 5.5px 10px 0 0;
   }
 
   .right-desc {
@@ -356,18 +356,18 @@
 
   .prog-skill i {
     width: 30px;
-    margin: 7px 10px 0 0;
+    margin: 6.5px 10px 0 0;
   }
 
   .cerfificate i {
-    margin-top: 5.5px;
+    margin-top: 5px;
     margin-left: 10px;
   }
 
   .prog-skill .fab,
   .prog-skill .fa-brands {
     width: 30px;
-    margin: 1.5px 10px 0 0;
+    margin: 1px 10px 0 0;
   }
 }
 
