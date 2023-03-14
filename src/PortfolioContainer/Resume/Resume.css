@@ -146,7 +146,7 @@
   width: 40px;
   text-align: center;
   margin: 0;
-  margin-top: 9px;
+  margin-top: 9.5px;
 }
 
 .prog-skill .fab,
@@ -346,6 +346,19 @@
 
   .resume-parent-border {
     border-radius: 2%;
+  }
+
+  .prog-skill i {
+    margin-top: 8px;
+  }
+
+  .cerfificate i {
+    margin-top: 6px;
+  }
+
+  .prog-skill .fab,
+  .prog-skill .fa-brands {
+    margin-top: 2px;
   }
 }
 
