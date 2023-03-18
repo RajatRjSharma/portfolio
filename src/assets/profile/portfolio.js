@@ -8,16 +8,14 @@ const portfolio = {
     fullname: "Rajat Kumar Sharma",
     profileSkills: {
       skills: [
-        "Software Developer",
+        "Software Engineer",
         "Angular Dev",
         "Play Framework Dev",
         "ReactJs Dev",
-        "Spring Boot Dev",
       ],
       skillTime: 1000,
     },
-    profileTagline:
-      "I develop applications with front and back end operations.",
+    profileTagline: `"I develop applications with front and back end operations."`,
   },
 
   resume: {
@@ -28,17 +26,32 @@ const portfolio = {
         startDate: "May 2021",
         endDate: "Present",
         description: [
-          `Developed a candidate assessment platform enabling HR to
-        hire potential candidates and save the company $3000+ in
-        hiring expenses. (Full Time)`,
-          `Developed two demo workflow systems to provide the company 
-        with a platform to showcase company products to clients. (Full Time)`,
-          `Developed two workflow systems to provide SMEs in the
-        healthcare field with tools and platforms to do medical
-        coding and annotation. (Internship & Full Time)`,
-          `My Team scored 3rd place in Internal R&D Hackathon organized by 
-        our company. We developed a Health Portfolio application were user 
-        can store and record there health conditions. (Internship)`,
+          `Revamped a Candidate Assessment platform by using Angular, 
+        PlayFramework, and Scala, enabling HR to efficiently identify 
+        potential candidates and significantly save the company $3000+ 
+        in hiring expenses. (Full Time)`,
+          `Prepared two demo workflow systems for Medical Coding by 
+        using Angular to provide the company with a platform to 
+        effectively demonstrate their products and services to 
+        clients. (Full Time)`,
+          `Developed a Medical Annotation platform by using Angular, 
+        PlayFramework, and Scala, adding tools for medical records 
+        annotation and management. (Full Time & Internship)`,
+          `The Medical Annotation platform reduces the manual work 
+        and time by 80%, spent by SMEs in the healthcare field on 
+        excel and editor.`,
+          `Successfully delivered SME's requirement for a graphical 
+      relational annotation platform helping them in producing 
+      annotation files for Medical Records. (Full Time & Internship)`,
+          `Contributed to a Medical Coding platform by using Angular, 
+      PlayFramework, and Scala, by implementing a recommendation system, 
+      a change tracking functionality, and optimizing some APIs by 50-60% 
+      faster response time. (Internship)`,
+          `Scored 3rd place and Rs 5k cash prize in Internal R&D Hackathon 
+      organized by our company.`,
+          `Created a Health Portfolio application for Hackathon using Ionic 
+      Framework integrated with Angular where users can store and record 
+      their health conditions. (Internship)`,
         ],
       },
       {
@@ -47,9 +60,9 @@ const portfolio = {
         startDate: "Aug 2020",
         endDate: "Oct 2020",
         description: [
-          `Developed a dashboard for data visualization to get
-          insights on Terrorism Activities and Call Data Records.
-          (Internship)`,
+          `Developed two dashboards for data visualization to get insights on 
+        Terrorism Activities and Call Data Records, significantly reducing 
+        time spent on excel to do the same. (Internship)`,
         ],
       },
     ],
@@ -313,7 +326,7 @@ const portfolio = {
         description: [
           `A platform that provides the contact list from dummy API
           JSONPlaceholder.`,
-          `Features the addition, deletion and update to the
+          `Features the addition, deletion, and update to the
           contacts.`,
         ],
       },
