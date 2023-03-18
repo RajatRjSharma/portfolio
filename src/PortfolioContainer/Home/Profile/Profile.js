@@ -72,7 +72,7 @@ export default function Profile({ profile }) {
             <a
               href="resume.pdf"
               rel="noopener noreferrer"
-              download="Rajat Kumar Sharma Resume.pdf"
+              download="Rajat_Kumar_Sharma_Resume.pdf"
             >
               <button className="btn highlighted-btn">Get Resume</button>
             </a>

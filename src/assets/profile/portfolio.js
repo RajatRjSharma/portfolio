@@ -9,11 +9,10 @@ const portfolio = {
     profileSkills: {
       skills: [
         "Software Developer",
-        "Full Stack Developer",
         "Angular Dev",
-        "Play Framework",
+        "Play Framework Dev",
         "ReactJs Dev",
-        "Spring Boot",
+        "Spring Boot Dev",
       ],
       skillTime: 1000,
     },
@@ -32,9 +31,14 @@ const portfolio = {
           `Developed a candidate assessment platform enabling HR to
         hire potential candidates and save the company $3000+ in
         hiring expenses. (Full Time)`,
-          `Developed three workflow systems to provide SMEs in the
+          `Developed two demo workflow systems to provide the company 
+        with a platform to showcase company products to clients. (Full Time)`,
+          `Developed two workflow systems to provide SMEs in the
         healthcare field with tools and platforms to do medical
         coding and annotation. (Internship & Full Time)`,
+          `My Team scored 3rd place in Internal R&D Hackathon organized by 
+        our company. We developed a Health Portfolio application were user 
+        can store and record there health conditions. (Internship)`,
         ],
       },
       {
@@ -92,13 +96,18 @@ const portfolio = {
     programmingSkills: [
       {
         skill: "Angular",
-        scale: "70",
+        scale: "80",
         icon: "fab fa-angular",
       },
       {
         skill: "ReactJs",
-        scale: "50",
+        scale: "60",
         icon: "fab fa-react",
+      },
+      {
+        skill: "Ionic",
+        scale: "50",
+        icon: "fas fa-circle",
       },
       {
         skill: "NodeJs",
@@ -112,38 +121,53 @@ const portfolio = {
       },
       {
         skill: "Play Framework",
-        scale: "60",
+        scale: "70",
         icon: "fas fa-circle",
       },
       {
         skill: "Spring Boot",
-        scale: "40",
-        icon: "fas fa-circle",
-      },
-      {
-        skill: "Rest APIs",
-        scale: "60",
-        icon: "fas fa-circle",
-      },
-      {
-        skill: "MongoDb",
-        scale: "40",
-        icon: "fas fa-circle",
-      },
-      {
-        skill: "PostgreSQL",
         scale: "50",
         icon: "fas fa-circle",
       },
       {
-        skill: "Type/Javascript",
+        skill: "Rest APIs",
         scale: "70",
+        icon: "fas fa-circle",
+      },
+      {
+        skill: "MongoDb",
+        scale: "50",
+        icon: "fas fa-circle",
+      },
+      {
+        skill: "PostgreSQL",
+        scale: "60",
+        icon: "fas fa-circle",
+      },
+      {
+        skill: "Javascript",
+        scale: "80",
         icon: "fa-brands fa-js",
+      },
+      {
+        skill: "Typescript",
+        scale: "80",
+        icon: "fas fa-circle",
       },
       {
         skill: "HTML & CSS",
         scale: "80",
         icon: "fa-brands fa-html5",
+      },
+      {
+        skill: "Bootstrap",
+        scale: "60",
+        icon: "fa-brands fa-bootstrap",
+      },
+      {
+        skill: "Tailwind CSS",
+        scale: "70",
+        icon: "fas fa-circle",
       },
       {
         skill: "Scala",
@@ -169,6 +193,16 @@ const portfolio = {
         skill: "Python",
         scale: "70",
         icon: "fa-brands fa-python",
+      },
+      {
+        skill: "Git",
+        scale: "80",
+        icon: "fa-brands fa-git",
+      },
+      {
+        skill: "Docker",
+        scale: "70",
+        icon: "fa-brands fa-docker",
       },
     ],
 
