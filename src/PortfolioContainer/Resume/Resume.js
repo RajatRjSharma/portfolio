@@ -60,7 +60,7 @@ export default function Resume({ resume }) {
   });
 
   return (
-    <div className="resume-container">
+    <div className="resume-container mt-5">
       <div className="resume-parent">
         <div className="title-text">
           <h1>Resume</h1>

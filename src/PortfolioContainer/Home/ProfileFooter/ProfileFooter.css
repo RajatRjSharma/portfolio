@@ -23,3 +23,7 @@
     align-items: flex-end;
   }
 }
+
+.profileFooter-child {
+  height: 30px;
+}

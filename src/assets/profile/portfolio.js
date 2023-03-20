@@ -15,7 +15,7 @@ const portfolio = {
       ],
       skillTime: 1000,
     },
-    profileTagline: `"I develop applications with front and back end operations."`,
+    profileTagline: `"A Software Engineer, on the journey to build career in growing technology."`,
   },
 
   resume: {

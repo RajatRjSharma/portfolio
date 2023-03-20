@@ -6,10 +6,7 @@ export default function Footer({ links }) {
     <div className="footer-container">
       <div className="footer-container">
         <div className="footer-parent">
-          <img
-            src={require("../../assets/profile/shape-bg.png")}
-            alt="no internet connection"
-          />
+          <div className="footer-child"></div>
         </div>
       </div>
       <div className="footer-body">
