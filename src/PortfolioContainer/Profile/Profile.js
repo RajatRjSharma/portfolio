@@ -10,7 +10,7 @@ export default function Profile({ profile }) {
   }
 
   return (
-    <div className="profile-container mt-3">
+    <div className="profile-container">
       <div className="profile-parent">
         <div className="profile-details">
           <div className="colz">

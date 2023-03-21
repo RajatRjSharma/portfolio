@@ -4,7 +4,7 @@
   text-align: center;
   justify-content: center;
   min-height: fit-content;
-  margin-top: 20px;
+  padding: 15px 0 40px 0;
 }
 
 .contactme-parent {
@@ -99,10 +99,33 @@ form {
   justify-content: center;
 }
 
+.contactme-body h1 {
+  margin-right: 10px;
+}
+
 @media screen and (max-width: 1110px) {
 }
 
 @media screen and (max-width: 910px) {
+  .contactme-parent {
+    width: 90%;
+  }
+
+  .contactme-body {
+    width: 60%;
+    flex-wrap: wrap;
+    margin: 15px;
+    padding: 10px;
+  }
+
+  .contactme-body form {
+    width: 80%;
+  }
+
+  .contactme-body h1 {
+    width: 100%;
+    text-align: center !important;
+  }
 }
 
 @media screen and (max-width: 810px) {
@@ -141,4 +164,12 @@ form {
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(2px);
+}
+
+.toast-error {
+  background: var(--toast-error) !important;
+}
+
+.toast-success {
+  background: var(--toast-success) !important;
 }

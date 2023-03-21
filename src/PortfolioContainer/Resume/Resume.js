@@ -59,12 +59,31 @@ export default function Resume({ resume }) {
     changeDisplay("education");
   });
 
+  function getDateWithFormat(date) {
+    const dateSplit = date.split(/[ /-]/g);
+    const dateObj = new Date(
+      `${dateSplit.length == 2 ? dateSplit[1] : dateSplit[2]}/${
+        new Date(
+          Date.parse(
+            dateSplit.length == 2 ? dateSplit[0] : dateSplit[1] + "1, 2001"
+          )
+        ).getMonth() + 1
+      }/1`
+    );
+    if (dateObj instanceof Date && !isNaN(dateObj))
+      return dateObj.toLocaleString("en-us", {
+        month: "short",
+        year: "numeric",
+      });
+    else return date;
+  }
+
   return (
-    <div className="resume-container mt-5">
+    <div className="resume-container">
       <div className="resume-parent">
         <div className="title-text">
           <h1>Resume</h1>
-          <span>My formal Bio Details</span>
+          <span>My Formal Bio Details</span>
           <div className="resume-parent-border">
             <span></span>
           </div>
@@ -128,7 +147,8 @@ export default function Resume({ resume }) {
                         </span>
                       </div>
                       <div className="right-title-2">
-                        {history?.startDate} - {history?.endDate}
+                        {getDateWithFormat(history?.startDate)} -{" "}
+                        {getDateWithFormat(history?.endDate)}
                       </div>
                     </div>
                     <div className="right-desc">
@@ -158,7 +178,8 @@ export default function Resume({ resume }) {
                         </span>
                       </div>
                       <div className="right-title-2">
-                        {educ?.startDate} - {educ?.endDate}
+                        {getDateWithFormat(educ?.startDate)} -{" "}
+                        {getDateWithFormat(educ?.endDate)}
                       </div>
                     </div>
                     <div className="right-desc">
@@ -228,7 +249,8 @@ export default function Resume({ resume }) {
                         );
                       })}
                       <div className="right-title-2">
-                        {project?.startDate} - {project?.endDate}
+                        {getDateWithFormat(project?.startDate)} -{" "}
+                        {getDateWithFormat(project?.endDate)}
                       </div>
                     </div>
                     <div className="right-desc">
@@ -270,7 +292,9 @@ export default function Resume({ resume }) {
                           </span>
                         </span>
                       </div>
-                      <div className="right-title-2">{certificate?.date}</div>
+                      <div className="right-title-2 certi-date">
+                        {getDateWithFormat(certificate?.date)}
+                      </div>
                     </div>
                   </div>
                 );

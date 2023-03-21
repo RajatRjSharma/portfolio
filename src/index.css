@@ -1,4 +1,4 @@
-@import url('./assets/icon/css/all.min.css');
+@import url("./assets/icon/css/all.min.css");
 
 @font-face {
   font-family: "Poppins Medium";
@@ -61,11 +61,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
 ::-webkit-scrollbar {
   width: 6px !important;
   height: 6px !important;
@@ -102,11 +97,12 @@ body ::-webkit-scrollbar-thumb {
   font-size: 12px;
   background-color: #1f2235;
 }
-/* @media only screen and (max-width: 414px) {
+
+@media only screen and (max-width: 414px) {
   .primary-btn {
     font-size: 13px;
   }
-} */
+}
 
 .primary-btn:hover {
   color: aliceblue;
@@ -120,20 +116,11 @@ body ::-webkit-scrollbar-thumb {
   font-size: 12px;
   background-color: #ff5823;
 }
+
 @media only screen and (max-width: 568px) {
   .highlighted-btn {
     z-index: -900;
   }
-}
-
-.red-border {
-  border: 1px solid var(--error-message) !important;
-}
-
-.fade-in {
-  opacity: 0;
-  transform: translateY(80px);
-  transition: all 0.8s ease;
 }
 
 body::-webkit-scrollbar {

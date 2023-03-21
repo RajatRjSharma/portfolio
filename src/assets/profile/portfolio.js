@@ -459,7 +459,7 @@ const portfolio = {
     hideProgressBar: false,
     newestOnTop: false,
     rtl: false,
-    theme: "light",
+    theme: "colored",
   },
 
   clockLoaderConfig: {

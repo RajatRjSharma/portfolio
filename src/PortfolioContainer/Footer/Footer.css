@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: darkslategrey;
+  padding-top: 1px;
 }
 
 .footer-body {
@@ -15,34 +16,7 @@
   color: var(--white);
 }
 
-.footer-container {
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-}
-
-.footer-parent {
-  width: 100%;
-  height: 100%;
-  max-width: 1920px;
-}
-
-.footer-parent img {
-  max-width: 100%;
-  height: 130px;
-  -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
 @media only screen and (max-width: 1110px) {
-  .footer-parent {
-    display: flex;
-    align-items: flex-end;
-  }
 }
 
 .colz .colz-icon i {
@@ -57,8 +31,4 @@
 
 .colz {
   margin-left: 10px;
-}
-
-.footer-child {
-  height: 3px;
 }

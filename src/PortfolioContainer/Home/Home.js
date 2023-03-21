@@ -1,11 +1,9 @@
 import React, { Component } from "react";
-import Profile from "./Profile/Profile";
-import ProfileFooter from "./ProfileFooter/ProfileFooter";
+import Profile from "../Profile/Profile";
 import ContactMe from "../ContactMe/ContactMe";
 import Footer from "../Footer/Footer";
 import Resume from "../Resume/Resume";
 import portfolio from "../../assets/profile/portfolio.js";
-import "./Home.css";
 
 export default class Home extends Component {
   constructor(props) {
@@ -23,10 +21,7 @@ export default class Home extends Component {
   render() {
     return (
       <>
-        <div className="home-container">
-          <Profile profile={this.state.profile} />
-          <ProfileFooter />
-        </div>
+        <Profile profile={this.state.profile} />
         <Resume resume={this.state.resume} />
         <ContactMe
           emailConfig={this.state.emailConfig}

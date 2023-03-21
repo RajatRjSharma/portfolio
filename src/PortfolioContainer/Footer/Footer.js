@@ -4,11 +4,6 @@ import "./Footer.css";
 export default function Footer({ links }) {
   return (
     <div className="footer-container">
-      <div className="footer-container">
-        <div className="footer-parent">
-          <div className="footer-child"></div>
-        </div>
-      </div>
       <div className="footer-body">
         <span>Thank You for Visit </span>
         <div className="colz">

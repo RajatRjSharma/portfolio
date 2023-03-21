@@ -28,15 +28,19 @@ export default function ContactMe({
         (result) => {
           setLoading(false);
           if (result.text === "OK") {
-            toast.success("Message submited successfully");
+            toast.success("Message submited successfully", {
+              className: "toast-success",
+            });
           } else {
-            toast.success(result.text);
+            toast.info(result.text);
           }
         },
         (error) => {
           setLoading(false);
           console.log(error.text);
-          toast.error("Fail to submit message, Please try after sometime.!");
+          toast.error("Fail to submit message, Please try after sometime.!", {
+            className: "toast-error",
+          });
         }
       );
     e.target.reset();
@@ -110,7 +114,7 @@ export default function ContactMe({
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        theme={toastConfig?.theme ? toastConfig.theme : "light"}
+        theme={toastConfig?.theme ? toastConfig.theme : "colored"}
       />
       {loading ? (
         <div className="loader">

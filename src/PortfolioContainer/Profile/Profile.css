@@ -5,6 +5,8 @@
   justify-content: center;
   height: 10%;
   min-height: fit-content;
+  background-color: darkslategrey;
+  padding: 30px 0 30px 0;
 }
 
 .profile-parent {
@@ -61,7 +63,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 1px 0px 0px var(--white);
+  box-shadow: 0 1px 0px 0px var(--back-ground);
   border-radius: 50%;
   height: 380px;
   width: 380px;
@@ -71,7 +73,7 @@
 .profile-picture-background {
   height: 92%;
   width: 92%;
-  background-image: url(../../../assets/profile/profilephoto.jpg);
+  background-image: url(../../assets/profile/profilephoto.jpg);
   background-size: cover;
   border-radius: 50%;
   background-repeat: no-repeat;
@@ -133,9 +135,7 @@
 
   .profile-options {
     display: flex;
-    justify-content: space-between;
-    margin-right: 20px;
-    margin-left: 20px;
+    justify-content: space-evenly;
   }
 
   .profile-details {
