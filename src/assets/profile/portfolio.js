@@ -27,42 +27,39 @@ const portfolio = {
         endDate: "Present",
         description: [
           `Revamped a Candidate Assessment platform by using Angular, 
-        PlayFramework, and Scala, enabling HR to efficiently identify 
-        potential candidates and significantly save the company $3000+ 
-        in hiring expenses. (Full Time)`,
+        Play Framework, and Scala, enabling HR to identify potential 
+        candidates and save the company $3000+ in hiring expenses. (Full Time)`,
           `Prepared two demo workflow systems for Medical Coding by 
         using Angular to provide the company with a platform to 
-        effectively demonstrate their products and services to 
-        clients. (Full Time)`,
+        demonstrate their products and services to clients. (Full Time)`,
           `Developed a Medical Annotation platform by using Angular, 
-        PlayFramework, and Scala, adding tools for medical records 
+        Play Framework, and Scala, adding tools for medical records 
         annotation and management. (Full Time & Internship)`,
-          `The Medical Annotation platform reduces the manual work 
-        and time by 80%, spent by SMEs in the healthcare field on 
-        excel and editor.`,
+          `The Medical Annotation platform reduces the manual efforts 
+        and time spent by SMEs (Healthcare) on excel and editor by 80%.`,
           `Successfully delivered SME's requirement for a graphical 
-      relational annotation platform helping them in producing 
-      annotation files for Medical Records. (Full Time & Internship)`,
+        relational annotation platform helping in producing annotation 
+        files for Medical Records. (Full Time & Internship)`,
           `Contributed to a Medical Coding platform by using Angular, 
-      PlayFramework, and Scala, by implementing a recommendation system, 
-      a change tracking functionality, and optimizing some APIs by 50-60% 
-      faster response time. (Internship)`,
-          `Scored 3rd place and Rs 5k cash prize in Internal R&D Hackathon 
-      organized by our company.`,
+        Play Framework, and Scala, implementing a recommendation system, 
+        a change tracking functionality, and optimizing some APIs for 
+        50-60% faster response time. (Internship)`,
+          `Scored 3rd place and Rs 5K cash prize in Internal R&D Hackathon 
+        organized by the company.`,
           `Created a Health Portfolio application for Hackathon using Ionic 
-      Framework integrated with Angular where users can store and record 
-      their health conditions. (Internship)`,
+        Framework integrated with Angular where users can store and 
+        record their health conditions. (Internship)`,
         ],
       },
       {
         role: "Data Analyst Intern",
-        place: "Forsk Technology, Remote",
+        place: "Forsk Technology, Jaipur",
         startDate: "Aug 2020",
         endDate: "Oct 2020",
         description: [
           `Developed two dashboards for data visualization to get insights on 
-        Terrorism Activities and Call Data Records, significantly reducing 
-        time spent on excel to do the same. (Internship)`,
+        Terrorism Activities and Call Data Records, reducing time spent on 
+        excel to do the same. (Internship)`,
         ],
       },
     ],
@@ -70,7 +67,7 @@ const portfolio = {
     education: [
       {
         institute: "Lovely Professional University",
-        course: "BTech, CSE",
+        course: "B-Tech, CSE",
         startDate: "Jul 2018",
         endDate: "Jun 2022",
         description: [
