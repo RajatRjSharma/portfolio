@@ -62,10 +62,10 @@ export default function Resume({ resume }) {
   function getDateWithFormat(date) {
     const dateSplit = date.split(/[ /-]/g);
     const dateObj = new Date(
-      `${dateSplit.length == 2 ? dateSplit[1] : dateSplit[2]}/${
+      `${dateSplit.length === 2 ? dateSplit[1] : dateSplit[2]}/${
         new Date(
           Date.parse(
-            dateSplit.length == 2 ? dateSplit[0] : dateSplit[1] + "1, 2001"
+            dateSplit.length === 2 ? dateSplit[0] : dateSplit[1] + "1, 2001"
           )
         ).getMonth() + 1
       }/1`
@@ -128,7 +128,7 @@ export default function Resume({ resume }) {
               id="projects-tile"
             >
               <i className="fas fa-tasks"></i>
-              <span className="left-text">Projects</span>
+              <span className="left-text">Personal Projects</span>
             </div>
           </div>
           <div id="resume-body-right" className="resume-body-right">
@@ -197,75 +197,80 @@ export default function Resume({ resume }) {
               })}
             </div>
             <div id="programming-skills">
-              {resume?.programmingSkills?.map((skill, indexSkill) => {
-                return (
-                  <div className="right-object" key={indexSkill}>
-                    <div className="right-title">
-                      <div className="right-title-1 prog-skill">
-                        <i className={skill?.icon}></i>
-                        <span className="left-text">
-                          {skill?.skill} <span className="left-text-sub"></span>
-                        </span>
-                      </div>
-                      <div className="right-title-2-level">
-                        <span
-                          className={
-                            "right-title-2-level-1 right-title-2-level-1-" +
-                            skill?.scale
-                          }
-                        ></span>
+              {resume?.programmingSkills
+                ?.sort((a, b) => a?.scale < b?.scale)
+                ?.map((skill, indexSkill) => {
+                  return (
+                    <div className="right-object" key={indexSkill}>
+                      <div className="right-title">
+                        <div className="right-title-1 prog-skill">
+                          <i className={skill?.icon}></i>
+                          <span className="left-text">
+                            {skill?.skill}
+                            <span className="left-text-sub"></span>
+                          </span>
+                        </div>
+                        <div className="right-title-2-level">
+                          <span
+                            className={
+                              "right-title-2-level-1 right-title-2-level-1-" +
+                              skill?.scale
+                            }
+                          ></span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                );
-              })}
+                  );
+                })}
             </div>
             <div id="projects">
-              {resume?.projects?.map((project, indexProject) => {
-                return (
-                  <div className="right-object" key={indexProject}>
-                    <div className="right-title">
-                      {project?.projectTitle?.map((title, indexTitle) => {
-                        return (
-                          <div className="right-title-1" key={indexTitle}>
-                            <i className="fas fa-circle"></i>
-                            <span className="left-text">
-                              {title?.link?.length > 0 ? (
-                                <a
-                                  href={title?.link}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                >
-                                  {title?.title}
-                                </a>
-                              ) : (
-                                <>{title?.title}</>
-                              )}{" "}
-                              <span className="left-text-sub">
-                                {title?.subTitle}
+              {resume?.projects
+                ?.filter((_) => _?.show)
+                ?.map((project, indexProject) => {
+                  return (
+                    <div className="right-object" key={indexProject}>
+                      <div className="right-title">
+                        {project?.projectTitle?.map((title, indexTitle) => {
+                          return (
+                            <div className="right-title-1" key={indexTitle}>
+                              <i className="fas fa-circle"></i>
+                              <span className="left-text">
+                                {title?.link?.length > 0 ? (
+                                  <a
+                                    href={title?.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
+                                    {title?.title}
+                                  </a>
+                                ) : (
+                                  <>{title?.title}</>
+                                )}{" "}
+                                <span className="left-text-sub">
+                                  {title?.subTitle}
+                                </span>
                               </span>
-                            </span>
-                          </div>
-                        );
-                      })}
-                      <div className="right-title-2">
-                        {getDateWithFormat(project?.startDate)} -{" "}
-                        {getDateWithFormat(project?.endDate)}
+                            </div>
+                          );
+                        })}
+                        <div className="right-title-2">
+                          {getDateWithFormat(project?.startDate)} -{" "}
+                          {getDateWithFormat(project?.endDate)}
+                        </div>
+                      </div>
+                      <div className="right-desc">
+                        {project?.description?.map((desc, indexDesc) => {
+                          return (
+                            <div className="right-desc-1" key={indexDesc}>
+                              <i className="fas fa-circle"></i>
+                              <span className="left-text">{desc}</span>
+                            </div>
+                          );
+                        })}
                       </div>
                     </div>
-                    <div className="right-desc">
-                      {project?.description?.map((desc, indexDesc) => {
-                        return (
-                          <div className="right-desc-1" key={indexDesc}>
-                            <i className="fas fa-circle"></i>
-                            <span className="left-text">{desc}</span>
-                          </div>
-                        );
-                      })}
-                    </div>
-                  </div>
-                );
-              })}
+                  );
+                })}
             </div>
             <div id="certifications">
               {resume?.certifications?.map((certificate, certificateSkill) => {

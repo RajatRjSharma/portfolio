@@ -26,29 +26,39 @@ const portfolio = {
         startDate: "May 2021",
         endDate: "Present",
         description: [
+          `Contributed to a Revenue Cycle Management tool in the Healthcare 
+        domain by using React, Redux, Material UI, and Kendo, achieving 70% 
+        automation and ensuring 95%+ accuracy in claims while streamlining 
+        billing workflows, reducing coding costs, and guaranteeing security 
+        and scalability. (Full Time)`,
+          `Developed a workflow system by using Angular, PlayFramework, 
+        and Scala to enable SMEs to efficiently audit medical charts and 
+        export the audited results within a shorter timeframe of 3 to 12 
+        hours. (Full Time)`,
           `Revamped a Candidate Assessment platform by using Angular, 
         Play Framework, and Scala, enabling HR to identify potential 
-        candidates and save the company $3000+ in hiring expenses. (Full Time)`,
+        candidates and save the company $3000+ in hiring expenses. 
+        (Full Time)`,
           `Prepared two demo workflow systems for Medical Coding by 
         using Angular to provide the company with a platform to 
         demonstrate their products and services to clients. (Full Time)`,
-          `Developed a Medical Annotation platform by using Angular, 
-        Play Framework, and Scala, adding tools for medical records 
+          `Developed a Medical Annotation tool by using Angular, 
+        PlayFramework, and Scala, adding tools for medical records 
         annotation and management. (Full Time & Internship)`,
-          `The Medical Annotation platform reduces the manual efforts 
-        and time spent by SMEs (Healthcare) on excel and editor by 80%.`,
+          `The Medical Annotation tool reduces the manual efforts 
+        and time spent by SMEs (Healthcare) on Excel and editor by 80%.`,
           `Successfully delivered SME's requirement for a graphical 
         relational annotation platform helping in producing annotation 
         files for Medical Records. (Full Time & Internship)`,
           `Contributed to a Medical Coding platform by using Angular, 
-        Play Framework, and Scala, implementing a recommendation system, 
-        a change tracking functionality, and optimizing some APIs for 
-        50-60% faster response time. (Internship)`,
-          `Scored 3rd place and Rs 5K cash prize in Internal R&D Hackathon 
-        organized by the company.`,
-          `Created a Health Portfolio application for Hackathon using Ionic 
-        Framework integrated with Angular where users can store and 
-        record their health conditions. (Internship)`,
+        Play Framework, and Scala, implementing a recommendation 
+        system, a change tracking functionality, and optimizing some 
+        APIs for 50-60% faster response time. (Internship)`,
+          `Scored 3rd place and Rs 5K cash prize in Internal R&D 
+        Hackathon organized by the company.`,
+          `Created a Health Portfolio application for Hackathon 
+        using Ionic Framework integrated with Angular where users 
+        can store and record their health conditions. (Internship)`,
         ],
       },
       {
@@ -57,9 +67,9 @@ const portfolio = {
         startDate: "Aug 2020",
         endDate: "Oct 2020",
         description: [
-          `Developed two dashboards for data visualization to get insights on 
-        Terrorism Activities and Call Data Records, reducing time spent on 
-        excel to do the same. (Internship)`,
+          `Prepared two dashboards for data visualization to get 
+        insights on Terrorism Activities and Call Data Records, 
+        reducing time spent on Excel to do the same. (Internship)`,
         ],
       },
     ],
@@ -111,8 +121,13 @@ const portfolio = {
       },
       {
         skill: "ReactJs",
-        scale: "60",
+        scale: "80",
         icon: "fab fa-react",
+      },
+      {
+        skill: "Redux",
+        scale: "70",
+        icon: "fas fa-circle",
       },
       {
         skill: "Ionic",
@@ -180,6 +195,16 @@ const portfolio = {
         icon: "fas fa-circle",
       },
       {
+        skill: "Material UI",
+        scale: "60",
+        icon: "fas fa-circle",
+      },
+      {
+        skill: "Kendo",
+        scale: "60",
+        icon: "fas fa-circle",
+      },
+      {
         skill: "Scala",
         scale: "70",
         icon: "fas fa-circle",
@@ -218,6 +243,23 @@ const portfolio = {
 
     projects: [
       {
+        show: true,
+        projectTitle: [
+          {
+            title: "Flex in Css",
+            subTitle: "Html Css Js",
+            link: "https://rajatrjsharma.github.io/flex/",
+          },
+        ],
+        startDate: "Feb 2024",
+        endDate: "Feb 2024",
+        description: [
+          `Plain Html, Css and Js page to demonstrate Flex css property with 
+        Justify Content and Align Items.`,
+        ],
+      },
+      {
+        show: true,
         projectTitle: [
           {
             title: "Todo List App",
@@ -233,6 +275,7 @@ const portfolio = {
         ],
       },
       {
+        show: false,
         projectTitle: [
           {
             title: "Assessment Platform",
@@ -250,6 +293,7 @@ const portfolio = {
         ],
       },
       {
+        show: false,
         projectTitle: [
           {
             title: "Medical Annotation Platform",
@@ -269,6 +313,7 @@ const portfolio = {
         ],
       },
       {
+        show: false,
         projectTitle: [
           {
             title: "Medical Coding Platform",
@@ -288,6 +333,7 @@ const portfolio = {
         ],
       },
       {
+        show: true,
         projectTitle: [
           {
             title: "Insights on Call Data Records",
@@ -311,6 +357,7 @@ const portfolio = {
         ],
       },
       {
+        show: true,
         projectTitle: [
           {
             title: "Contact Manager",
