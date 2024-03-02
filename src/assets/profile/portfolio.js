@@ -246,15 +246,30 @@ const portfolio = {
         show: true,
         projectTitle: [
           {
+            title: "Email me a Quote",
+            subTitle: "HTML CSS JS REST-APIs",
+            link: "https://rajatrjsharma.github.io/emailmequote/",
+          },
+        ],
+        startDate: "Feb 2024",
+        endDate: "Feb 2024",
+        description: [
+          `Plain HTML, CSS, and JS page to email a quote from a dummy api.`,
+        ],
+      },
+      {
+        show: true,
+        projectTitle: [
+          {
             title: "Flex in Css",
-            subTitle: "Html Css Js",
+            subTitle: "HTML CSS JS",
             link: "https://rajatrjsharma.github.io/flex/",
           },
         ],
         startDate: "Feb 2024",
         endDate: "Feb 2024",
         description: [
-          `Plain Html, Css and Js page to demonstrate Flex css property with 
+          `Plain HTML, CSS, and JS page to demonstrate Flex CSS property with 
         Justify Content and Align Items.`,
         ],
       },
