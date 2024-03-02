@@ -491,12 +491,6 @@ const portfolio = {
     ],
   },
 
-  emailConfig: {
-    serviceId: "service_19mf5oh",
-    templateId: "template_jnz08gs",
-    publickey: "F5Jdb-gpz4oSnhLqi",
-  },
-
   toastConfig: {
     position: "top-center",
     autoClose: 3000,

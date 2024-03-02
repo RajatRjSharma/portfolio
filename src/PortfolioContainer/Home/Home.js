@@ -24,7 +24,11 @@ export default class Home extends Component {
         <Profile profile={this.state.profile} />
         <Resume resume={this.state.resume} />
         <ContactMe
-          emailConfig={this.state.emailConfig}
+          emailConfig={{
+            serviceId: process.env.REACT_APP_SERVICE_ID,
+            templateId: process.env.REACT_APP_TEMPLATE_ID,
+            publickey: process.env.REACT_APP_PUBLIC_KEY,
+          }}
           toastConfig={this.state.toastConfig}
           clockLoaderConfig={this.state.clockLoaderConfig}
         />
