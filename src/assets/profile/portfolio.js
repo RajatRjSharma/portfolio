@@ -254,7 +254,9 @@ const portfolio = {
         startDate: "Feb 2024",
         endDate: "Feb 2024",
         description: [
-          `Plain HTML, CSS, and JS page to email a quote from a dummy api.`,
+          `Plain HTML, CSS, and JS page to email a quote from a api.`,
+          `A Open Source Quote api integration.`,
+          `A Email service integration.`,
         ],
       },
       {
