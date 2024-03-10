@@ -246,6 +246,54 @@ const portfolio = {
         show: true,
         projectTitle: [
           {
+            title: "BMI Calcuator",
+            subTitle: "Reactjs Material HTML CSS",
+            link: "https://rajatrjsharma.github.io/bmi-calculator/",
+          },
+        ],
+        startDate: "Mar 2024",
+        endDate: "Mar 2024",
+        description: [
+          `Reactjs, Material UI, HTML, CSS, project to get the BMI 
+          based on height and weight with the category.`,
+        ],
+      },
+      {
+        show: true,
+        projectTitle: [
+          {
+            title: "Random Quote",
+            subTitle: "HTML CSS JS REST-APIs",
+            link: "https://rajatrjsharma.github.io/random-quote/",
+          },
+        ],
+        startDate: "Mar 2024",
+        endDate: "Mar 2024",
+        description: [
+          `Plain HTML, CSS, and JS page to load and display a quote from an API.`,
+          `An Open Source Quote API integration.`,
+        ],
+      },
+      {
+        show: true,
+        projectTitle: [
+          {
+            title: "Calculator",
+            subTitle: "HTML CSS JS",
+            link: "https://rajatrjsharma.github.io/calculator/",
+          },
+        ],
+        startDate: "Mar 2024",
+        endDate: "Mar 2024",
+        description: [
+          `Plain HTML, CSS, and JS page to perform mathematical calculations.`,
+          `Supports addition, subtraction, multiplication, division, and modulus.`,
+        ],
+      },
+      {
+        show: true,
+        projectTitle: [
+          {
             title: "Email me a Quote",
             subTitle: "HTML CSS JS REST-APIs",
             link: "https://rajatrjsharma.github.io/emailmequote/",
@@ -254,9 +302,9 @@ const portfolio = {
         startDate: "Feb 2024",
         endDate: "Feb 2024",
         description: [
-          `Plain HTML, CSS, and JS page to email a quote from a api.`,
-          `A Open Source Quote api integration.`,
-          `A Email service integration.`,
+          `Plain HTML, CSS, and JS page to email a quote from an API.`,
+          `An Open Source Quote API integration.`,
+          `An Email service integration.`,
         ],
       },
       {
@@ -287,7 +335,7 @@ const portfolio = {
         startDate: "Feb 2023",
         endDate: "Mar 2023",
         description: [
-          `A platform to maintain Todo List on browser's localStorage.`,
+          `A platform to maintain the Todo List on the browser's localStorage.`,
           `Features the addition and deletion of Todos.`,
         ],
       },
