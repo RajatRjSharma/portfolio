@@ -198,7 +198,7 @@ export default function Resume({ resume }) {
             </div>
             <div id="programming-skills">
               {resume?.programmingSkills
-                ?.sort((a, b) => a?.scale < b?.scale)
+                ?.sort((a, b) => b?.scale - a?.scale)
                 ?.map((skill, indexSkill) => {
                   return (
                     <div className="right-object" key={indexSkill}>
