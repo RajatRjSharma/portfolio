@@ -1,5 +1,5 @@
 import React from "react";
-import Typical from "react-typical";
+import { TypeAnimation } from "react-type-animation";
 import "./Profile.css";
 
 export default function Profile({ profile }) {
@@ -52,12 +52,15 @@ export default function Profile({ profile }) {
               {" "}
               <h1>
                 {" "}
-                <Typical
-                  loop={Infinity}
-                  steps={profile?.profileSkills?.skills
+                <TypeAnimation
+                  sequence={profile?.profileSkills?.skills
                     .join(`,${profile?.profileSkills?.skillTime},`)
                     .split(",")
                     .map((value) => (+value ? +value : value))}
+                  repeat={Infinity}
+                  wrapper="span"
+                  speed={50}
+                  style={{ display: "inline-block" }}
                 />
               </h1>
               <span className="profile-role-tagline">
