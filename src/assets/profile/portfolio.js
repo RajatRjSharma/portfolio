@@ -241,6 +241,21 @@ const portfolio = {
         scale: "70",
         icon: "fa-brands fa-docker",
       },
+      {
+        skill: "Docker",
+        scale: "70",
+        icon: "fa-brands fa-docker",
+      },
+      {
+        skill: "Jooq",
+        scale: "50",
+        icon: "fas fa-circle",
+      },
+      {
+        skill: "Slick",
+        scale: "50",
+        icon: "fas fa-circle",
+      },
     ],
 
     projects: [
