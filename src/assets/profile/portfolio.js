@@ -26,39 +26,41 @@ const portfolio = {
         startDate: "May 2021",
         endDate: "Present",
         description: [
-          `Contributed to a Revenue Cycle Management tool in the Healthcare 
-        domain by using React, Redux, Material UI, and Kendo, achieving 70% 
-        automation and ensuring 95%+ accuracy in claims while streamlining 
-        billing workflows, reducing coding costs, and guaranteeing security 
-        and scalability. (Full Time)`,
-          `Developed a workflow system by using Angular, PlayFramework, 
-        and Scala to enable SMEs to efficiently audit medical charts and 
-        export the audited results within a shorter timeframe of 3 to 12 
-        hours. (Full Time)`,
+          `Contributed to Revenue Cycle Management system in the Healthcare 
+          domain by using React, Redux, Material UI, and Kendo, achieving 
+          70% automation and ensuring 95%+ accuracy in claims while 
+          streamlining billing workflows, reducing coding costs, and 
+          guaranteeing security and scalability. (Full Time)`,
+          `Developed a workflow system by using Angular, Play Framework, 
+          and Scala to enable SMEs to efficiently audit medical charts 
+          and export the audited results within a shorter timeframe of 
+          3 to 12 hours. (Full Time)`,
           `Revamped a Candidate Assessment platform by using Angular, 
-        Play Framework, and Scala, enabling HR to identify potential 
-        candidates and save the company $3000+ in hiring expenses. 
-        (Full Time)`,
+          PlayFramework, Jooq, and Scala, enabling HR to identify 
+          potential candidates and save the company $3000+ in hiring 
+          expenses. (Full Time)`,
           `Prepared two demo workflow systems for Medical Coding by 
-        using Angular to provide the company with a platform to 
-        demonstrate their products and services to clients. (Full Time)`,
+          using Angular to provide the company with a platform to 
+          demonstrate their products and services to clients. (Full Time)`,
           `Developed a Medical Annotation tool by using Angular, 
-        PlayFramework, and Scala, adding tools for medical records 
-        annotation and management. (Full Time & Internship)`,
-          `The Medical Annotation tool reduces the manual efforts 
-        and time spent by SMEs (Healthcare) on Excel and editor by 80%.`,
+          PlayFramework, and Scala, adding tools for medical records 
+          annotation and management reducing the manual work done by 
+          SMEs (Healthcare) on Excel and editor by 80%. (Full Time & 
+            Internship)`,
           `Successfully delivered SME's requirement for a graphical 
-        relational annotation platform helping in producing annotation 
-        files for Medical Records. (Full Time & Internship)`,
-          `Contributed to a Medical Coding platform by using Angular, 
-        Play Framework, and Scala, implementing a recommendation 
-        system, a change tracking functionality, and optimizing some 
-        APIs for 50-60% faster response time. (Internship)`,
-          `Scored 3rd place and Rs 5K cash prize in Internal R&D 
-        Hackathon organized by the company.`,
-          `Created a Health Portfolio application for Hackathon 
-        using Ionic Framework integrated with Angular where users 
-        can store and record their health conditions. (Internship)`,
+          relational annotation platform helping in efficient visualization 
+          and producing annotation files for Medical Records. (Full 
+            Time & Internship)`,
+          `Contributed to a Medical Coding workflow solution by using 
+          Angular, Play Framework, Jooq, and Scala, implementing a 
+          recommendation system, a change tracking functionality, 
+          and optimizing some APIs for 50-60% faster response time. 
+          (Internship)`,
+          `Created a Health Portfolio application using Ionic 
+          Framework integrated with Angular where users can store 
+          and record their health conditions helping my team in 
+          scoring 3rd place and a Rs 5K cash prize in an Internal 
+          R&D Hackathon. (Internship)`,
         ],
       },
       {
