@@ -21,7 +21,7 @@ const portfolio = {
   resume: {
     workHistory: [
       {
-        role: "Junior Research Engineer - Trainee (SDE)",
+        role: "Software Development Engineer",
         place: "Buddi.Ai, Chennai",
         startDate: "May 2021",
         endDate: "Present",
