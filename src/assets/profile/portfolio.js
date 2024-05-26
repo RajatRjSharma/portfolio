@@ -26,40 +26,15 @@ const portfolio = {
         startDate: "May 2021",
         endDate: "Present",
         description: [
-          `Enhanced a Revenue Cycle Management system in Healthcare using 
-          React, Redux, Material UI, and Kendo, incorporating components, 
-          and API integration, achieving 70% automation, ensuring 95%+ 
-          claim accuracy, streamlining billing, reducing coding costs, and 
-          ensuring security and scalability. (Full Time)`,
-          `Developed a workflow system using Angular, Tailwind CSS, Play 
-          Framework, Scala, PostgreSQL, Slick, and Docker, incorporating 
-          microservices and UI components to enable SMEs to efficiently 
-          audit medical charts and export audited results within 3-12 
-          hours. (Full Time)`,
-          `Redesigned a Candidate Assessment platform from scratch using 
-          Angular, Tailwind CSS, PlayFramework, Jooq, Scala, and PostgreSQL, 
-          incorporating UI components and microservices to enable HR to 
-          identify potential candidates and save the company $3000+ in 
-          hiring expenses. (Full Time)`,
-          `Created two demo workflow systems for Medical Coding using 
-          Angular and Bootstrap to provide the company with a platform 
-          to demonstrate products and services to clients. (Full Time)`,
-          `Developed a Medical Annotation tool using Angular, PlayFramework, 
-          Scala, PostgreSQL, and Docker to reduce manual work done by SMEs 
-          in healthcare by 80% for medical records annotation and management. 
-          (Full Time & Internship)`,
-          `Successfully delivered SME's requirement for a graphical relational 
-          annotation platform using Angular helping in efficient visualization 
-          and producing annotation files for Medical Records. 
-          (Full Time & Internship)`,
-          `Enhanced a Medical Coding workflow solution by using Angular, 
-          Bootstrap, Play Framework, Jooq, Scala, and PostgreSQL implementing 
-          a recommendation system, a change tracking functionality, and 
-          optimizing some APIs for 50-60% faster response time. (Internship)`,
-          `Constructed a Health Portfolio application using Ionic Framework 
-          integrated with Angular, to store and record health conditions, 
-          which helped the team secure 3rd place and win a Rs 5K cash prize 
-          in an Internal R&D Hackathon. (Internship)`,
+          `Created a Multi-Factor Authentication system using Angular, Tailwind CSS, Play Framework, Scala, PostgreSQL, Slick, and Docker to add a layer of security to applications apart from regular login, employing TOTP and HOTP algorithms, as well as email OTP generation (Full-Time).`,
+          `Enhanced a Healthcare Revenue Cycle Management system using React, Redux, Material UI, and Kendo, incorporating components and API integration, achieving 70% automation, ensuring 95%+ claim accuracy, streamlining billing, reducing coding costs, and ensuring security and scalability (Full Time).`,
+          `Developed workflow systems using Angular, Tailwind CSS, Play Framework, Scala, PostgreSQL, Slick, and Docker, incorporating microservices and UI components to enable Subject Matter Experts (SMEs) to prepare for client demos, efficiently audit medical charts, and export audited results within a timeframe of 3 to 12 hours (Full Time).`,
+          `Redesigned a Candidate Assessment platform from scratch using Angular, Tailwind CSS, PlayFramework, Jooq, Scala, and PostgreSQL, incorporating UI components and microservices to enable HR to identify potential candidates and save the company $3000+ in hiring expenses (Full Time).`,
+          `Created two demo workflow systems for Medical Coding using Angular and Bootstrap to provide the company with a platform to demonstrate products and services to clients (Full Time).`,
+          `Developed a Medical Annotation tool using Angular, PlayFramework, Scala, PostgreSQL, and Docker, significantly reducing manual work for healthcare Subject Matter Experts (SMEs) in medical records annotation and management by 80% (Full Time & Internship).`,
+          `Successfully delivered SME's requirements for a graphical relational annotation platform using Angular, aiding efficient visualization and generating annotation files for Medical Records (Full Time & Internship).`,
+          `Enhanced a Medical Coding workflow solution by utilizing Angular, Bootstrap, Play Framework, Jooq, Scala, and PostgreSQL, implementing a recommendation system, change tracking functionality, and optimizing APIs for 50-60% faster response times (Internship).`,
+          `Constructed a Health Portfolio application using the Ionic Framework integrated with Angular to store and record health conditions, which contributed to the team securing 3rd place and winning a Rs 5K cash prize in an Internal R&D Hackathon (Internship).`,
         ],
       },
       {
@@ -68,9 +43,7 @@ const portfolio = {
         startDate: "Aug 2020",
         endDate: "Oct 2020",
         description: [
-          `Designed two dashboards for data visualization to get insights on 
-          Terrorism Activities and Call Data Records, reducing time spent on 
-          Excel to do the same. (Internship)`,
+          `Designed two dashboards for data visualization to gain insights on Terrorism Activities and Call Data Records , reducing the time spent on Excel for the same tasks (Internship).`,
         ],
       },
     ],
@@ -248,6 +221,11 @@ const portfolio = {
       {
         skill: "Slick",
         scale: "50",
+        icon: "fas fa-circle",
+      },
+      {
+        skill: "NestJs",
+        scale: "40",
         icon: "fas fa-circle",
       },
     ],
