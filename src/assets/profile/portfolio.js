@@ -26,41 +26,40 @@ const portfolio = {
         startDate: "May 2021",
         endDate: "Present",
         description: [
-          `Contributed to Revenue Cycle Management system in the Healthcare 
-          domain by using React, Redux, Material UI, and Kendo, achieving 
-          70% automation and ensuring 95%+ accuracy in claims while 
-          streamlining billing workflows, reducing coding costs, and 
-          guaranteeing security and scalability. (Full Time)`,
-          `Developed a workflow system by using Angular, Play Framework, 
-          and Scala to enable SMEs to efficiently audit medical charts 
-          and export the audited results within a shorter timeframe of 
-          3 to 12 hours. (Full Time)`,
-          `Revamped a Candidate Assessment platform by using Angular, 
-          PlayFramework, Jooq, and Scala, enabling HR to identify 
-          potential candidates and save the company $3000+ in hiring 
-          expenses. (Full Time)`,
-          `Prepared two demo workflow systems for Medical Coding by 
-          using Angular to provide the company with a platform to 
-          demonstrate their products and services to clients. (Full Time)`,
-          `Developed a Medical Annotation tool by using Angular, 
-          PlayFramework, and Scala, adding tools for medical records 
-          annotation and management reducing the manual work done by 
-          SMEs (Healthcare) on Excel and editor by 80%. (Full Time & 
-            Internship)`,
-          `Successfully delivered SME's requirement for a graphical 
-          relational annotation platform helping in efficient visualization 
-          and producing annotation files for Medical Records. (Full 
-            Time & Internship)`,
-          `Contributed to a Medical Coding workflow solution by using 
-          Angular, Play Framework, Jooq, and Scala, implementing a 
-          recommendation system, a change tracking functionality, 
-          and optimizing some APIs for 50-60% faster response time. 
-          (Internship)`,
-          `Created a Health Portfolio application using Ionic 
-          Framework integrated with Angular where users can store 
-          and record their health conditions helping my team in 
-          scoring 3rd place and a Rs 5K cash prize in an Internal 
-          R&D Hackathon. (Internship)`,
+          `Enhanced a Revenue Cycle Management system in Healthcare using 
+          React, Redux, Material UI, and Kendo, incorporating components, 
+          and API integration, achieving 70% automation, ensuring 95%+ 
+          claim accuracy, streamlining billing, reducing coding costs, and 
+          ensuring security and scalability. (Full Time)`,
+          `Developed a workflow system using Angular, Tailwind CSS, Play 
+          Framework, Scala, PostgreSQL, Slick, and Docker, incorporating 
+          microservices and UI components to enable SMEs to efficiently 
+          audit medical charts and export audited results within 3-12 
+          hours. (Full Time)`,
+          `Redesigned a Candidate Assessment platform from scratch using 
+          Angular, Tailwind CSS, PlayFramework, Jooq, Scala, and PostgreSQL, 
+          incorporating UI components and microservices to enable HR to 
+          identify potential candidates and save the company $3000+ in 
+          hiring expenses. (Full Time)`,
+          `Created two demo workflow systems for Medical Coding using 
+          Angular and Bootstrap to provide the company with a platform 
+          to demonstrate products and services to clients. (Full Time)`,
+          `Developed a Medical Annotation tool using Angular, PlayFramework, 
+          Scala, PostgreSQL, and Docker to reduce manual work done by SMEs 
+          in healthcare by 80% for medical records annotation and management. 
+          (Full Time & Internship)`,
+          `Successfully delivered SME's requirement for a graphical relational 
+          annotation platform using Angular helping in efficient visualization 
+          and producing annotation files for Medical Records. 
+          (Full Time & Internship)`,
+          `Enhanced a Medical Coding workflow solution by using Angular, 
+          Bootstrap, Play Framework, Jooq, Scala, and PostgreSQL implementing 
+          a recommendation system, a change tracking functionality, and 
+          optimizing some APIs for 50-60% faster response time. (Internship)`,
+          `Constructed a Health Portfolio application using Ionic Framework 
+          integrated with Angular, to store and record health conditions, 
+          which helped the team secure 3rd place and win a Rs 5K cash prize 
+          in an Internal R&D Hackathon. (Internship)`,
         ],
       },
       {
@@ -69,9 +68,9 @@ const portfolio = {
         startDate: "Aug 2020",
         endDate: "Oct 2020",
         description: [
-          `Prepared two dashboards for data visualization to get 
-        insights on Terrorism Activities and Call Data Records, 
-        reducing time spent on Excel to do the same. (Internship)`,
+          `Designed two dashboards for data visualization to get insights on 
+          Terrorism Activities and Call Data Records, reducing time spent on 
+          Excel to do the same. (Internship)`,
         ],
       },
     ],
@@ -83,7 +82,7 @@ const portfolio = {
         startDate: "Jul 2018",
         endDate: "Jun 2022",
         description: [
-          `CGPA: 7.88`,
+          `CGPA: 7.88.`,
           `Languages learned are C, C++, Java, Python, HTML, CSS, Javascript.`,
           `Specialization in Machine Learning and Robotic Process
           Automation.`,
@@ -97,7 +96,7 @@ const portfolio = {
         startDate: "Mar 2016",
         endDate: "Mar 2018",
         description: [
-          `Percentage: 71.2%`,
+          `Percentage: 71.2%.`,
           `Subjects studied are Maths, English, Physics, Chemistry,
           Physical education.`,
         ],
@@ -108,7 +107,7 @@ const portfolio = {
         startDate: "Mar 2003",
         endDate: "Mar 2016",
         description: [
-          `Percentage: 67%`,
+          `Percentage: 67%.`,
           `Subjects studied are Maths, Geography, Social Studies,
           Physics, Chemistry, Biology, Hindi, English, and Computer.`,
         ],
