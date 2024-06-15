@@ -431,6 +431,20 @@ const portfolio = {
     ],
     certifications: [
       {
+        title: "Machine Learning with Python",
+        from: "Coursera",
+        link: "https://coursera.org/verify/24FTAJDRXKV4",
+        icon: "fas fa-circle",
+        date: "Jun 2024",
+      },
+      {
+        title: "Supervised Machine Learning: Regression and Classification",
+        from: "Coursera",
+        link: "https://coursera.org/verify/CHG8WUWYL4J4",
+        icon: "fas fa-circle",
+        date: "Jun 2024",
+      },
+      {
         title: "Data Analysis",
         from: "Buddi.Ai",
         link: "https://drive.google.com/file/d/1glkleB3vdmpE9t6SEeqdztPRIj6vh1qG/view?usp=sharing",
@@ -482,14 +496,14 @@ const portfolio = {
       {
         title: "Crash Course on Python",
         from: "Coursera",
-        link: "https://www.coursera.org/account/accomplishments/verify/W7584NG82F7Y",
+        link: "https://coursera.org/verify/W7584NG82F7Y",
         icon: "fas fa-circle",
         date: "April 2020",
       },
       {
         title: "Technical Support Fundamentals",
         from: "Coursera",
-        link: "https://www.coursera.org/account/accomplishments/verify/6WA44UAYPXRK",
+        link: "https://coursera.org/verify/6WA44UAYPXRK",
         icon: "fas fa-circle",
         date: "April 2020",
       },
