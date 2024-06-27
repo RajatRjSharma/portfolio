@@ -60,6 +60,8 @@ export default function Resume({ resume }) {
   });
 
   function getDateWithFormat(date) {
+    if ((data || "").toString().toLowerCase().trim() === "present")
+      return "Present";
     const dateSplit = date.split(/[ /-]/g);
     const dateObj = new Date(
       `${dateSplit.length === 2 ? dateSplit[1] : dateSplit[2]}/${
