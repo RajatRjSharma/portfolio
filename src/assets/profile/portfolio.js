@@ -235,6 +235,21 @@ const portfolio = {
         show: true,
         projectTitle: [
           {
+            title: "Calendar",
+            subTitle: "Angular HTML CSS",
+            link: "https://rajatrjsharma.github.io/calendar/",
+          },
+        ],
+        startDate: "Jul 2024",
+        endDate: "Jul 2024",
+        description: [
+          `Angular, HTML, CSS, project for a Calendar and a Scheduler.`,
+        ],
+      },
+      {
+        show: true,
+        projectTitle: [
+          {
             title: "BMI Calcuator",
             subTitle: "Reactjs Material HTML CSS",
             link: "https://rajatrjsharma.github.io/bmi-calculator/",
