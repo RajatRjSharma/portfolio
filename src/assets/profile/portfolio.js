@@ -235,6 +235,87 @@ const portfolio = {
         show: true,
         projectTitle: [
           {
+            title: "Feedback Form Builder",
+            subTitle: "React Firestore",
+            link: "https://rajatrjsharma.github.io/custom-feedback-form-builder",
+          },
+        ],
+        startDate: "Aug 2024",
+        endDate: "Aug 2024",
+        description: [
+          `Vite-React frontend project.`,
+          `Material UI for HTML Components & CSS.`,
+          `Redux-Toolkit for state management.`,
+          `Firebase/Firestore for serverless apis/storage.`,
+          `React-Router-Dom for routing.`,
+          `Eslint for lint check and fix.`,
+          `Host on GitHub pages & firebase hosting.`
+        ],
+      },
+      {
+        show: true,
+        projectTitle: [
+          {
+            title: "Task Manager Application",
+            subTitle: "NodeJs, Fastify, React, Mongo Project",
+            link: "https://github.com/RajatRjSharma/task-manager",
+          },
+        ],
+        startDate: "Aug 2024",
+        endDate: "Aug 2024",
+        description: [
+          `CRUD for tasks.`,
+          `UI to do CRUD.`
+        ],
+      },
+      {
+        show: true,
+        projectTitle: [
+          {
+            title: "Robot on Mission",
+            subTitle: "Python Django Backend",
+            link: "https://github.com/RajatRjSharma/robot-backend",
+          },
+        ],
+        startDate: "Sep 2024",
+        endDate: "Sep 2024",
+        description: [
+          `Python-Django backend project.`,
+          `Django-Rest-Framework for APIs.`,
+          `Django-Channels for Web Socket.`,
+          `Redis for Channels as backend.`,
+          `Postgres SQL as the database.`,
+          `Dockerfile, Docker-Compose for containerization.`,
+          `Coverage and Test-cases for code coverage.`,
+          `Host on AWS ec2, by config Postgres, Docker, Nginx.`
+        ],
+      },
+      {
+        show: true,
+        projectTitle: [
+          {
+            title: "Robot on Mission",
+            subTitle: "React Project",
+            link: "https://github.com/RajatRjSharma/robot-frontend",
+          },
+        ],
+        startDate: "Sep 2024",
+        endDate: "Sep 2024",
+        description: [
+          `Vite-React frontend project.`,
+          `Tailwind for CSS classes.`,
+          `Redux-Toolkit for state management.`,
+          `Axios for HTTP REST API calls.`,
+          `React-Router-Dom for routing.`,
+          `WebSocket for websocket connection.`,
+          `Eslint for lint check and fix.`,
+          `Host on AWS ec2, by config Nginx.`,
+        ],
+      },
+      {
+        show: true,
+        projectTitle: [
+          {
             title: "Calendar",
             subTitle: "Angular HTML CSS",
             link: "https://rajatrjsharma.github.io/calendar/",
@@ -243,7 +324,12 @@ const portfolio = {
         startDate: "Jul 2024",
         endDate: "Jul 2024",
         description: [
-          `Angular, HTML, CSS, project for a Calendar and a Scheduler.`,
+          `Angular frontend project for a Calendar and a Scheduler.`,
+          `Angular Material for HTML Components.`,
+          `Drag and Drop to manage tasks on a day.`,
+          `Localstorage to save schedule.`,
+          `Random Quote on each day from open source API.`,
+          `Hosted on GitHub pages.`,
         ],
       },
       {
@@ -258,8 +344,10 @@ const portfolio = {
         startDate: "Mar 2024",
         endDate: "Mar 2024",
         description: [
-          `Reactjs, Material UI, HTML, CSS, project to get the BMI 
-          based on height and weight with the category.`,
+          `BMI based on height and weight with the category.`,
+          `Vite-React frontend project.`,
+          `Material UI for HTML Component.`,
+          `Hosted on GitHub pages.`,
         ],
       },
       {
@@ -441,6 +529,8 @@ const portfolio = {
           JSONPlaceholder.`,
           `Features the addition, deletion, and update to the
           contacts.`,
+          `React frontend project.`,
+          `Hosted on GitHub pages.`
         ],
       },
     ],
