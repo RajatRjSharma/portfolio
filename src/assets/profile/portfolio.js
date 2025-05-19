@@ -9,9 +9,10 @@ const portfolio = {
     profileSkills: {
       skills: [
         "Software Engineer",
-        "Angular Dev",
-        "Play Framework Dev",
         "ReactJs Dev",
+        "Python Dev",
+        "Angular Dev",
+        "Scala Dev",
       ],
       skillTime: 1000,
     },
@@ -200,7 +201,7 @@ const portfolio = {
       },
       {
         skill: "Python",
-        scale: "70",
+        scale: "80",
         icon: "fa-brands fa-python",
       },
       {
@@ -226,6 +227,21 @@ const portfolio = {
       {
         skill: "NestJs",
         scale: "40",
+        icon: "fas fa-circle",
+      },
+      {
+        skill: "GCP",
+        scale: "40",
+        icon: "fab fa-google",
+      },
+      {
+        skill: "AWS",
+        scale: "40",
+        icon: "fab fa-aws",
+      },
+      {
+        skill: "Django",
+        scale: "80",
         icon: "fas fa-circle",
       },
     ],
