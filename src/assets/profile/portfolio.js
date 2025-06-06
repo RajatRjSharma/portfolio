@@ -22,10 +22,24 @@ const portfolio = {
   resume: {
     workHistory: [
       {
+        "role": "Software Engineer",
+        "place": "Avathon, Bangalore",
+        "startDate": "October 2024",
+        "endDate": "Present",
+        "description": [
+          "Core Logistics & Backend Development: Engineered the backend for a maritime logistics platform using Python (Django Rest Framework) and Scala (Slick), delivering 70+ APIs. These enabled critical functionalities including real-time fleet/shipment management, KPI dashboards, data synchronization, and advanced Reassign, Reconsign, and Optimize workflows.",
+          "Optimized API Performance: Reduced API latency by 20–30% through database-level pagination, advanced SQL queries (prefetching, DB-level filtering), and caching in Django, ensuring high responsiveness under load.",
+          "Full-Stack Collaboration & UI Contribution: Collaborated with the front-end team by co-designing API contracts for React/TypeScript features. Provided targeted contributions and bug fixes to the UI codebase, ensuring seamless end-to-end functionality and a cohesive user experience, improving delivery by 10–20%.",
+          "Centralized Authentication: Deployed a security model using Keycloak (JWTs) with custom user models, applying role-based permissions across Python/Scala microservices to secure operational data.",
+          "Enhanced System Responsiveness & Automation: Leveraged Celery for critical asynchronous tasks (scheduling, reports, RPA syncs); automated real-time external data integration & synchronization (APIs, web scraping, cron jobs).",
+          "Streamlined Development & API Stability: Dockerized Python/Django services for reproducible development environments; bolstered API stability through comprehensive logging and standardized error handling."
+        ]
+      },
+      {
         role: "Software Development Engineer",
         place: "Buddi.Ai, Chennai",
         startDate: "May 2021",
-        endDate: "Present",
+        endDate: "Sep 2024",
         description: [
           `Multi-Factor Authentication System: Designed, implemented, and dockerized an MFA system to enhance security in applications beyond regular login, utilizing TOTP, HOTP algorithms, and email OTP generation (Full-Time).`,
           `Revenue Cycle Management System: Enhanced a Healthcare RCM system by incorporating React & Kendo components , integrating RESTful APIs , and managing state with Redux , achieved 70% automation, ensured 95%+ claim accuracy, streamlined billing, reduced coding costs, and ensured security and scalability (Full-Time).`,
