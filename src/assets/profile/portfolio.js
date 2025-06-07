@@ -32,7 +32,7 @@ const portfolio = {
           "Full-Stack Collaboration & UI Contribution: Collaborated with the front-end team by co-designing API contracts for React/TypeScript features. Provided targeted contributions and bug fixes to the UI codebase, ensuring seamless end-to-end functionality and a cohesive user experience, improving delivery by 10–20%.",
           "Centralized Authentication: Deployed a security model using Keycloak (JWTs) with custom user models, applying role-based permissions across Python/Scala microservices to secure operational data.",
           "Enhanced System Responsiveness & Automation: Leveraged Celery for critical asynchronous tasks (scheduling, reports, RPA syncs); automated real-time external data integration & synchronization (APIs, web scraping, cron jobs).",
-          "Streamlined Development & API Stability: Dockerized Python/Django services for reproducible development environments; bolstered API stability through comprehensive logging and standardized error handling."
+          "Streamlined Dev & API Stability: Dockerized Python/Django/Scala services to simplify CI/CD and ensure reproducible environments; enhanced API stability with logging and error handling, making deployment and monitoring 1-time tasks."
         ]
       },
       {
