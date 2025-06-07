@@ -64,12 +64,11 @@ export default function Resume({ resume }) {
       return "Present";
     const dateSplit = date.split(/[ /-]/g);
     const dateObj = new Date(
-      `${dateSplit.length === 2 ? dateSplit[1] : dateSplit[2]}/${
-        new Date(
-          Date.parse(
-            dateSplit.length === 2 ? dateSplit[0] : dateSplit[1] + "1, 2001"
-          )
-        ).getMonth() + 1
+      `${dateSplit.length === 2 ? dateSplit[1] : dateSplit[2]}/${new Date(
+        Date.parse(
+          dateSplit.length === 2 ? dateSplit[0] : dateSplit[1] + "1, 2001"
+        )
+      ).getMonth() + 1
       }/1`
     );
     if (dateObj instanceof Date && !isNaN(dateObj))
@@ -144,7 +143,18 @@ export default function Resume({ resume }) {
                         <span className="left-text">
                           {history?.role}{" "}
                           <span className="left-text-sub">
-                            {history?.place}
+                            {history?.link?.length > 0 ? (
+                              <a
+                                href={history?.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{ "color": "#333333" }}
+                              >
+                                {history?.place}
+                              </a>
+                            ) : (
+                              <>{history?.place}</>
+                            )}{" "}
                           </span>
                         </span>
                       </div>
@@ -175,7 +185,17 @@ export default function Resume({ resume }) {
                       <div className="right-title-1">
                         <i className="fas fa-circle"></i>
                         <span className="left-text">
-                          {educ?.institute}{" "}
+                          {educ?.link?.length > 0 ? (
+                            <a
+                              href={educ?.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              {educ?.institute}
+                            </a>
+                          ) : (
+                            <> {educ?.institute}</>
+                          )}{" "}
                           <span className="left-text-sub">{educ?.course}</span>
                         </span>
                       </div>

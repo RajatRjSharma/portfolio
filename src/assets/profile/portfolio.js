@@ -22,11 +22,12 @@ const portfolio = {
   resume: {
     workHistory: [
       {
-        "role": "Software Engineer",
-        "place": "Avathon, Bangalore",
-        "startDate": "October 2024",
-        "endDate": "Present",
-        "description": [
+        role: "Software Engineer",
+        place: "Avathon (Formerly SparkCognition), Bangalore",
+        link: "https://avathon.com/",
+        startDate: "October 2024",
+        endDate: "Present",
+        description: [
           "Core Logistics & Backend Development: Engineered the backend for a maritime logistics platform using Python (Django Rest Framework) and Scala (Slick), delivering 70+ APIs. These enabled critical functionalities including real-time fleet/shipment management, KPI dashboards, data synchronization, and advanced Reassign, Reconsign, and Optimize workflows.",
           "Optimized API Performance: Reduced API latency by 20–30% through database-level pagination, advanced SQL queries (prefetching, DB-level filtering), and caching in Django, ensuring high responsiveness under load.",
           "Full-Stack Collaboration & UI Contribution: Collaborated with the front-end team by co-designing API contracts for React/TypeScript features. Provided targeted contributions and bug fixes to the UI codebase, ensuring seamless end-to-end functionality and a cohesive user experience, improving delivery by 10–20%.",
@@ -38,6 +39,7 @@ const portfolio = {
       {
         role: "Software Development Engineer",
         place: "Buddi.Ai, Chennai",
+        link: "https://www.buddi.ai/",
         startDate: "May 2021",
         endDate: "Sep 2024",
         description: [
@@ -55,6 +57,7 @@ const portfolio = {
       {
         role: "Data Analyst Intern",
         place: "Forsk Technology, Jaipur",
+        link: "https://drive.google.com/file/d/18fCGOWC-ijUfdsSSwdPytu8CawH42-Xo/view",
         startDate: "Aug 2020",
         endDate: "Oct 2020",
         description: [
@@ -66,6 +69,7 @@ const portfolio = {
     education: [
       {
         institute: "Lovely Professional University",
+        link: "https://www.lpu.in/",
         course: "B-Tech, CSE",
         startDate: "Jul 2018",
         endDate: "Jun 2022",
