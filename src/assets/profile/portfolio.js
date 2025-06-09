@@ -271,7 +271,8 @@ const portfolio = {
           {
             title: "Feedback Form Builder",
             subTitle: "React Firestore",
-            link: "https://rajatrjsharma.github.io/custom-feedback-form-builder",
+            _link: "https://rajatrjsharma.github.io/custom-feedback-form-builder",
+            link: "https://custom-feedback-form-builder.rajatkumarsharma.com",
           },
         ],
         startDate: "Aug 2024",
@@ -352,7 +353,8 @@ const portfolio = {
           {
             title: "Calendar",
             subTitle: "Angular HTML CSS",
-            link: "https://rajatrjsharma.github.io/calendar/",
+            _link: "https://rajatrjsharma.github.io/calendar/",
+            link: "https://calendar.rajatkumarsharma.com",
           },
         ],
         startDate: "Jul 2024",
@@ -372,7 +374,8 @@ const portfolio = {
           {
             title: "BMI Calcuator",
             subTitle: "Reactjs Material HTML CSS",
-            link: "https://rajatrjsharma.github.io/bmi-calculator/",
+            _link: "https://rajatrjsharma.github.io/bmi-calculator/",
+            link: "https://bmi-calculator.rajatkumarsharma.com",
           },
         ],
         startDate: "Mar 2024",
@@ -390,7 +393,8 @@ const portfolio = {
           {
             title: "Random Quote",
             subTitle: "HTML CSS JS REST-APIs",
-            link: "https://rajatrjsharma.github.io/random-quote/",
+            _link: "https://rajatrjsharma.github.io/random-quote/",
+            link: "https://random-quote.rajatkumarsharma.com",
           },
         ],
         startDate: "Mar 2024",
@@ -406,7 +410,8 @@ const portfolio = {
           {
             title: "Calculator",
             subTitle: "HTML CSS JS",
-            link: "https://rajatrjsharma.github.io/calculator/",
+            _link: "https://rajatrjsharma.github.io/calculator/",
+            link: "https://calculator.rajatkumarsharma.com",
           },
         ],
         startDate: "Mar 2024",
@@ -422,7 +427,8 @@ const portfolio = {
           {
             title: "Email me a Quote",
             subTitle: "HTML CSS JS REST-APIs",
-            link: "https://rajatrjsharma.github.io/emailmequote/",
+            _link: "https://rajatrjsharma.github.io/emailmequote/",
+            link: "https://emailmequote.rajatkumarsharma.com",
           },
         ],
         startDate: "Feb 2024",
@@ -439,7 +445,8 @@ const portfolio = {
           {
             title: "Flex in Css",
             subTitle: "HTML CSS JS",
-            link: "https://rajatrjsharma.github.io/flex/",
+            _link: "https://rajatrjsharma.github.io/flex/",
+            link: "https://flex.rajatkumarsharma.com",
           },
         ],
         startDate: "Feb 2024",
@@ -455,7 +462,8 @@ const portfolio = {
           {
             title: "Todo List App",
             subTitle: "ReactJs",
-            link: "https://rajatrjsharma.github.io/react-todo-list/",
+            _link: "https://rajatrjsharma.github.io/react-todo-list/",
+            link: "https://react-todo-list.rajatkumarsharma.com",
           },
         ],
         startDate: "Feb 2023",
@@ -553,7 +561,8 @@ const portfolio = {
           {
             title: "Contact Manager",
             subTitle: "ReactJs JSONPlaceholder",
-            link: "https://rajatrjsharma.github.io/cm/",
+            _link: "https://rajatrjsharma.github.io/cm/",
+            link: "https://cm.rajatkumarsharma.com",
           },
         ],
         startDate: "April 2020",
