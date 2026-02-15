@@ -56,7 +56,7 @@ export default function Resume({ resume }) {
   }
 
   React.useEffect(() => {
-    changeDisplay("education");
+    changeDisplay("work-history");
   });
 
   function getDateWithFormat(date) {
@@ -64,12 +64,13 @@ export default function Resume({ resume }) {
       return "Present";
     const dateSplit = date.split(/[ /-]/g);
     const dateObj = new Date(
-      `${dateSplit.length === 2 ? dateSplit[1] : dateSplit[2]}/${new Date(
-        Date.parse(
-          dateSplit.length === 2 ? dateSplit[0] : dateSplit[1] + "1, 2001"
-        )
-      ).getMonth() + 1
-      }/1`
+      `${dateSplit.length === 2 ? dateSplit[1] : dateSplit[2]}/${
+        new Date(
+          Date.parse(
+            dateSplit.length === 2 ? dateSplit[0] : dateSplit[1] + "1, 2001",
+          ),
+        ).getMonth() + 1
+      }/1`,
     );
     if (dateObj instanceof Date && !isNaN(dateObj))
       return dateObj.toLocaleString("en-us", {
@@ -93,20 +94,21 @@ export default function Resume({ resume }) {
           <div className="resume-body-left">
             <div
               className="left-title"
-              onClick={() => handleClick("education")}
-              id="education-tile"
-            >
-              <i className="fas fa-graduation-cap"></i>
-              <span className="left-text">Education</span>
-            </div>
-            <div
-              className="left-title"
               onClick={() => handleClick("work-history")}
               id="work-history-tile"
             >
               <i className="fas fa-history"></i>
               <span className="left-text">Work History</span>
             </div>
+            <div
+              className="left-title"
+              onClick={() => handleClick("education")}
+              id="education-tile"
+            >
+              <i className="fas fa-graduation-cap"></i>
+              <span className="left-text">Education</span>
+            </div>
+
             <div
               className="left-title"
               onClick={() => handleClick("programming-skills")}
@@ -148,7 +150,7 @@ export default function Resume({ resume }) {
                                 href={history?.link}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                style={{ "color": "#333333" }}
+                                style={{ color: "#333333" }}
                               >
                                 {history?.place}
                               </a>
