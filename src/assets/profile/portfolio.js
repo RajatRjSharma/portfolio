@@ -9,8 +9,10 @@ const portfolio = {
     profileSkills: {
       skills: [
         "Software Engineer",
-        "ReactJs Dev",
         "Python Dev",
+        "FastAPI Dev",
+        "ReactJs Dev",
+        "Django Dev",
         "Angular Dev",
         "Scala Dev",
       ],
@@ -23,18 +25,30 @@ const portfolio = {
     workHistory: [
       {
         role: "Software Engineer",
+        place: "Reveal Healthtech, Bangalore",
+        link: "https://revealhealthtech.com/",
+        startDate: "September 2025",
+        endDate: "present",
+        description: [
+          "Dashboard & Analytics Workflows: Built backend APIs and React (Vite, TanStack Router/Query) dashboards with FastAPI, MS SQL, and SQLAlchemy, delivering real-time visibility into 500+ daily appointments across 20+ clinics, reducing manual reporting time by 70% and enabling data-driven operational decisions.",
+          "Scheduling & Workflow Engine: Architected Azure-hosted FastAPI microservices with SQLAlchemy/Alembic managing 5K+ monthly appointments across a multi-tenant healthcare platform serving 2 providers, achieving 99.5% uptime and reducing double-booking incidents by 85%.",
+          "SMS Communications & Automation: Developed Twilio SMS automation delivering 15K+ monthly messages (reminders, follow-ups) via Dockerized services provisioned with Terraform, reducing no-show rates by 25% and saving 10+ manual hours weekly through automated patient engagement.",
+        ],
+      },
+      {
+        role: "Software Engineer",
         place: "Avathon (Formerly SparkCognition), Bangalore",
         link: "https://avathon.com/",
         startDate: "October 2024",
-        endDate: "Present",
+        endDate: "September 2025",
         description: [
           "Core Logistics & Backend Development: Engineered the backend for a maritime logistics platform using Python (Django Rest Framework) and Scala (Slick), delivering 70+ APIs. These enabled critical functionalities including real-time fleet/shipment management, KPI dashboards, data synchronization, and advanced Reassign, Reconsign, and Optimize workflows.",
           "Optimized API Performance: Reduced API latency by 20–30% through database-level pagination, advanced SQL queries (prefetching, DB-level filtering), and caching in Django, ensuring high responsiveness under load.",
           "Full-Stack Collaboration & UI Contribution: Collaborated with the front-end team by co-designing API contracts for React/TypeScript features. Provided targeted contributions and bug fixes to the UI codebase, ensuring seamless end-to-end functionality and a cohesive user experience, improving delivery by 10–20%.",
           "Centralized Authentication: Deployed a security model using Keycloak (JWTs) with custom user models, applying role-based permissions across Python/Scala microservices to secure operational data.",
           "Enhanced System Responsiveness & Automation: Leveraged Celery for critical asynchronous tasks (scheduling, reports, RPA syncs); automated real-time external data integration & synchronization (APIs, web scraping, cron jobs).",
-          "Streamlined Dev & API Stability: Dockerized Python/Django/Scala services to simplify CI/CD and ensure reproducible environments; enhanced API stability with logging and error handling, making deployment and monitoring 1-time tasks."
-        ]
+          "Streamlined Dev & API Stability: Dockerized Python/Django/Scala services to simplify CI/CD and ensure reproducible environments; enhanced API stability with logging and error handling, making deployment and monitoring 1-time tasks.",
+        ],
       },
       {
         role: "Software Development Engineer",
@@ -67,6 +81,14 @@ const portfolio = {
     ],
 
     education: [
+      {
+        institute: "Outskill",
+        link: "https://www.outskill.com/",
+        course: "AI Engineering Fellowship",
+        startDate: "Nov 2025",
+        endDate: "May 2026",
+        description: [`Generative AI Engineering Fellowship`],
+      },
       {
         institute: "Lovely Professional University",
         link: "https://www.lpu.in/",
@@ -262,6 +284,31 @@ const portfolio = {
         scale: "80",
         icon: "fas fa-circle",
       },
+      {
+        skill: "FastAPI",
+        scale: "70",
+        icon: "fas fa-circle",
+      },
+      {
+        skill: "ETL",
+        scale: "50",
+        icon: "fas fa-circle",
+      },
+      {
+        skill: "Azure",
+        scale: "50",
+        icon: "fab fa-microsoft",
+      },
+      {
+        skill: "Terraform",
+        scale: "50",
+        icon: "fas fa-circle",
+      },
+      {
+        skill: "Azure Data Factory",
+        scale: "50",
+        icon: "fab fa-microsoft",
+      },
     ],
 
     projects: [
@@ -271,7 +318,8 @@ const portfolio = {
           {
             title: "Feedback Form Builder",
             subTitle: "React Firestore",
-            _link: "https://rajatrjsharma.github.io/custom-feedback-form-builder",
+            _link:
+              "https://rajatrjsharma.github.io/custom-feedback-form-builder",
             link: "https://custom-feedback-form-builder.rajatkumarsharma.com",
           },
         ],
@@ -284,7 +332,7 @@ const portfolio = {
           `Firebase/Firestore for serverless apis/storage.`,
           `React-Router-Dom for routing.`,
           `Eslint for lint check and fix.`,
-          `Host on GitHub pages & firebase hosting.`
+          `Host on GitHub pages & firebase hosting.`,
         ],
       },
       {
@@ -298,10 +346,7 @@ const portfolio = {
         ],
         startDate: "Aug 2024",
         endDate: "Aug 2024",
-        description: [
-          `CRUD for tasks.`,
-          `UI to do CRUD.`
-        ],
+        description: [`CRUD for tasks.`, `UI to do CRUD.`],
       },
       {
         show: true,
@@ -322,7 +367,7 @@ const portfolio = {
           `Postgres SQL as the database.`,
           `Dockerfile, Docker-Compose for containerization.`,
           `Coverage and Test-cases for code coverage.`,
-          `Host on AWS ec2, by config Postgres, Docker, Nginx.`
+          `Host on AWS ec2, by config Postgres, Docker, Nginx.`,
         ],
       },
       {
@@ -573,7 +618,7 @@ const portfolio = {
           `Features the addition, deletion, and update to the
           contacts.`,
           `React frontend project.`,
-          `Hosted on GitHub pages.`
+          `Hosted on GitHub pages.`,
         ],
       },
     ],
