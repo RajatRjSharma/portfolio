@@ -9,6 +9,7 @@ const portfolio = {
     profileSkills: {
       skills: [
         "Software Engineer",
+        "Generative AI Engineer",
         "Python Dev",
         "FastAPI Dev",
         "ReactJs Dev",
@@ -309,9 +310,60 @@ const portfolio = {
         scale: "50",
         icon: "fab fa-microsoft",
       },
+      {
+        skill: "LangChain",
+        scale: "50",
+        icon: "fas fa-link",
+      },
+      {
+        skill: "LangGraph",
+        scale: "50",
+        icon: "fas fa-project-diagram",
+      },
+      {
+        skill: "Agno",
+        scale: "50",
+        icon: "fas fa-robot",
+      },
+      {
+        skill: "CrewAI",
+        scale: "50",
+        icon: "fas fa-users",
+      },
+      {
+        skill: "MCP (Model Context Protocol)",
+        scale: "50",
+        icon: "fas fa-plug",
+      },
+      {
+        skill: "LangSmith",
+        scale: "50",
+        icon: "fas fa-flask",
+      },
     ],
 
     projects: [
+      {
+        show: true,
+        projectTitle: [
+          {
+            title: "Voice-Driven Data Analyst",
+            subTitle: "Next.js FastAPI LangGraph",
+            link: "https://chat-sql-five.vercel.app/",
+          },
+        ],
+        startDate: "Jul 2026",
+        endDate: "Aug 2026",
+        description: [
+          `Conversational BI assistant — ask in natural language, get validated SQL, answer, table & chart.`,
+          `Next.js frontend with Recharts; FastAPI backend API with SSE streaming stages.`,
+          `LangGraph agent: intent → entity linking → schema RAG → SQL generate/validate/execute → summarize.`,
+          `PostgreSQL + pgvector for schema embeddings; OpenRouter for LLM & embedding models.`,
+          `Connect external warehouses or upload CSV/Excel; SELECT-only SQL with retry recovery paths.`,
+          `JWT httpOnly cookie auth; voice via Web Speech STT & offline Piper TTS.`,
+          `Deployed on Vercel (UI) & Render (API); CI with GitHub Actions.`,
+        ],
+      },
       {
         show: true,
         projectTitle: [
