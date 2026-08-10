@@ -676,6 +676,13 @@ const portfolio = {
     ],
     certifications: [
       {
+        title: "Mastering REST APIs with FastAPI",
+        from: "Coursera",
+        link: "https://coursera.org/verify/5C91CGFLOVQT",
+        icon: "fas fa-circle",
+        date: "Jul 2026",
+      },
+      {
         title: "Machine Learning with Python",
         from: "Coursera",
         link: "https://coursera.org/verify/24FTAJDRXKV4",
