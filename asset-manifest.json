@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.dd4f51e7.css",
-    "main.js": "/static/js/main.a0665111.js",
+    "main.js": "/static/js/main.99a7afda.js",
     "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.2877d54f94f30c5d563c.ttf",
     "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.13e40630e5866f777de8.ttf",
     "static/media/Poppins-Thin.ttf": "/static/media/Poppins-Thin.a61eaf4c2e4d44d6db6a.ttf",
@@ -20,10 +20,10 @@
     "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.497d535001197a9c5b38.woff2",
     "index.html": "/index.html",
     "main.dd4f51e7.css.map": "/static/css/main.dd4f51e7.css.map",
-    "main.a0665111.js.map": "/static/js/main.a0665111.js.map"
+    "main.99a7afda.js.map": "/static/js/main.99a7afda.js.map"
   },
   "entrypoints": [
     "static/css/main.dd4f51e7.css",
-    "static/js/main.a0665111.js"
+    "static/js/main.99a7afda.js"
   ]
 }
