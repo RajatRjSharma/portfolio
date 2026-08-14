@@ -349,7 +349,7 @@ const portfolio = {
           {
             title: "Voice-Driven Data Analyst",
             subTitle: "Next.js FastAPI LangGraph",
-            link: "https://chat-sql-five.vercel.app/",
+            link: "https://chatsql.rajatkumarsharma.com/",
           },
         ],
         startDate: "Jul 2026",
