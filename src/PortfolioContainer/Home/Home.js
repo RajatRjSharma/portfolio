@@ -1,39 +1,51 @@
-import React, { Component } from "react";
+import React, { lazy, Suspense, useState } from "react";
 import Profile from "../Profile/Profile";
-import ContactMe from "../ContactMe/ContactMe";
-import Footer from "../Footer/Footer";
+import FeaturedProjects from "../FeaturedProjects/FeaturedProjects";
 import Resume from "../Resume/Resume";
+import Footer from "../Footer/Footer";
+import Nav from "../Nav/Nav";
 import portfolio from "../../assets/profile/portfolio.js";
 
-export default class Home extends Component {
-  constructor(props) {
-    super(props);
+const ContactMe = lazy(() => import("../ContactMe/ContactMe"));
 
-    this.state = {
-      profile: portfolio.profile,
-      resume: portfolio.resume,
-      emailConfig: portfolio.emailConfig,
-      toastConfig: portfolio.toastConfig,
-      clockLoaderConfig: portfolio.clockLoaderConfig,
-    };
-  }
+const emailConfig = {
+  serviceId: process.env.REACT_APP_SERVICE_ID,
+  templateId: process.env.REACT_APP_TEMPLATE_ID,
+  publickey: process.env.REACT_APP_PUBLIC_KEY,
+};
 
-  render() {
-    return (
-      <>
-        <Profile profile={this.state.profile} />
-        <Resume resume={this.state.resume} />
-        <ContactMe
-          emailConfig={{
-            serviceId: process.env.REACT_APP_SERVICE_ID,
-            templateId: process.env.REACT_APP_TEMPLATE_ID,
-            publickey: process.env.REACT_APP_PUBLIC_KEY,
-          }}
-          toastConfig={this.state.toastConfig}
-          clockLoaderConfig={this.state.clockLoaderConfig}
+export default function Home() {
+  const [resumeTab, setResumeTab] = useState("work-history");
+
+  return (
+    <>
+      <a className="skip-link" href="#main">
+        Skip to content
+      </a>
+      <Nav />
+      <main id="main">
+        <Profile profile={portfolio.profile} />
+        <FeaturedProjects projects={portfolio.resume.projects} />
+        <Resume
+          resume={portfolio.resume}
+          activeTab={resumeTab}
+          onTabChange={setResumeTab}
         />
-        <Footer links={this.state.profile.links} />
-      </>
-    );
-  }
+        <div id="contact-form">
+          <Suspense
+            fallback={
+              <div className="contactme-container" aria-hidden="true" />
+            }
+          >
+            <ContactMe
+              emailConfig={emailConfig}
+              toastConfig={portfolio.toastConfig}
+              clockLoaderConfig={portfolio.clockLoaderConfig}
+            />
+          </Suspense>
+        </div>
+      </main>
+      <Footer links={portfolio.profile.links} />
+    </>
+  );
 }

@@ -1,37 +1,30 @@
-import React from "react";
+import React, { memo } from "react";
+import ExternalLink from "../../utils/ExternalLink";
 import "./Footer.css";
 
-export default function Footer({ links }) {
+function Footer({ links }) {
+  const year = new Date().getFullYear();
+
   return (
-    <div className="footer-container">
+    <footer className="footer-container">
       <div className="footer-body">
-        <span>Thank You for Visit </span>
+        <span>Thank you for visiting · {year}</span>
         <div className="colz">
           <div className="colz-icon">
-            <a
-              href={links && links.github ? links.github : "#"}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-github"></i>
-            </a>
-            <a
-              href={links && links.linkedin ? links.linkedin : "#"}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-linkedin"></i>
-            </a>
-            <a
-              href={links && links.instagram ? links.instagram : "#"}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-instagram"></i>
-            </a>
+            <ExternalLink href={links?.github} ariaLabel="GitHub">
+              <i className="fab fa-github" aria-hidden="true"></i>
+            </ExternalLink>
+            <ExternalLink href={links?.linkedin} ariaLabel="LinkedIn">
+              <i className="fab fa-linkedin" aria-hidden="true"></i>
+            </ExternalLink>
+            <ExternalLink href={links?.instagram} ariaLabel="Instagram">
+              <i className="fab fa-instagram" aria-hidden="true"></i>
+            </ExternalLink>
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
+
+export default memo(Footer);

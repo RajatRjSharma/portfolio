@@ -1,9 +1,15 @@
-import { React, useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import React, { useRef, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import "./ContactMe.css";
 import { ClockLoader } from "react-spinners";
+import SectionTitle from "../SectionTitle/SectionTitle";
+import "./ContactMe.css";
+
+function isEmailConfigured(emailConfig) {
+  return Boolean(
+    emailConfig?.serviceId && emailConfig?.templateId && emailConfig?.publickey
+  );
+}
 
 export default function ContactMe({
   emailConfig,
@@ -11,56 +17,89 @@ export default function ContactMe({
   clockLoaderConfig,
 }) {
   const form = useRef();
-  let [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const configured = isEmailConfigured(emailConfig);
 
-  function sendEmail(e) {
-    e.preventDefault();
+  async function sendEmail(event) {
+    event.preventDefault();
+    if (loading) return;
+
+    const honeypot = form.current?.elements?.company_website?.value;
+    if (honeypot) {
+      toast.success("Message submitted successfully", {
+        className: "toast-success",
+      });
+      form.current?.reset();
+      return;
+    }
+
+    if (!configured) {
+      toast.error("Contact form is unavailable. Please try again later.", {
+        className: "toast-error",
+      });
+      return;
+    }
+
     setLoading(true);
 
-    emailjs
-      .sendForm(
+    try {
+      const emailjs = await import("@emailjs/browser");
+      const result = await emailjs.sendForm(
         emailConfig.serviceId,
         emailConfig.templateId,
         form.current,
         emailConfig.publickey
-      )
-      .then(
-        (result) => {
-          setLoading(false);
-          if (result.text === "OK") {
-            toast.success("Message submited successfully", {
-              className: "toast-success",
-            });
-          } else {
-            toast.info(result.text);
-          }
-        },
-        (error) => {
-          setLoading(false);
-          console.log(error.text);
-          toast.error("Fail to submit message, Please try after sometime.!", {
-            className: "toast-error",
-          });
-        }
       );
-    e.target.reset();
+
+      if (result.text === "OK") {
+        toast.success("Message submitted successfully", {
+          className: "toast-success",
+        });
+        form.current?.reset();
+      } else {
+        toast.error("Failed to submit message. Please try again later.", {
+          className: "toast-error",
+        });
+      }
+    } catch (error) {
+      toast.error("Failed to submit message. Please try again later.", {
+        className: "toast-error",
+      });
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
-    <div id="contact-form" className="contactme-container">
+    <section
+      className="contactme-container"
+      aria-labelledby="contact-heading"
+      aria-busy={loading}
+    >
       <div className="contactme-parent">
-        <div className="title-text">
-          <h1>Contact Me</h1>
-          <span>Lets Keep in Touch</span>
-          <div className="contactme-parent-border">
-            <span></span>
-          </div>
-        </div>
+        <SectionTitle
+          headingId="contact-heading"
+          title="Contact Me"
+          subtitle="Let's Keep in Touch"
+        />
         <div className="contactme-body">
-          <h1>
-            <span>Get</span> In Touch
-          </h1>
-          <form ref={form} onSubmit={sendEmail}>
+          <div className="contactme-intro">
+            <h3>
+              <span>Get</span> In Touch
+            </h3>
+            <p>Send a message and I will get back to you.</p>
+          </div>
+          <form ref={form} onSubmit={sendEmail} aria-label="Contact form">
+            <div className="hp-field" aria-hidden="true">
+              <label htmlFor="company_website">Company website</label>
+              <input
+                type="text"
+                id="company_website"
+                name="company_website"
+                tabIndex={-1}
+                autoComplete="off"
+              />
+            </div>
             <div className="form-group">
               <label htmlFor="name">Name</label>
               <input
@@ -69,6 +108,8 @@ export default function ContactMe({
                 id="name"
                 name="user_name"
                 placeholder="Enter name..."
+                autoComplete="name"
+                maxLength={100}
                 required
               />
             </div>
@@ -80,67 +121,59 @@ export default function ContactMe({
                 id="email"
                 name="user_email"
                 placeholder="Enter email..."
+                autoComplete="email"
+                maxLength={254}
                 required
               />
             </div>
             <div className="form-group">
               <label htmlFor="message">Message</label>
               <textarea
-                type="text"
                 className="form-control no-border"
                 id="message"
                 name="user_message"
                 placeholder="Enter your message..."
+                autoComplete="off"
+                maxLength={2000}
                 required
                 rows="3"
               ></textarea>
             </div>
-            <button type="submit" className="btn primary-btn center">
-              {""}
-              Submit
+            <button
+              type="submit"
+              className="btn primary-btn center"
+              disabled={loading}
+              aria-busy={loading}
+            >
+              {loading ? "Sending" : "Submit"}
             </button>
           </form>
         </div>
       </div>
       <ToastContainer
-        position={toastConfig?.position ? toastConfig.position : "top-center"}
-        autoClose={toastConfig?.autoClose ? toastConfig.autoClose : 3000}
-        hideProgressBar={
-          toastConfig?.hideProgressBar ? toastConfig.hideProgressBar : false
-        }
-        newestOnTop={toastConfig?.newestOnTop ? toastConfig.newestOnTop : false}
+        position={toastConfig?.position || "top-center"}
+        autoClose={toastConfig?.autoClose || 3000}
+        hideProgressBar={toastConfig?.hideProgressBar || false}
+        newestOnTop={toastConfig?.newestOnTop || false}
         closeOnClick
-        rtl={toastConfig?.rtl ? toastConfig.rtl : false}
+        rtl={toastConfig?.rtl || false}
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        theme={toastConfig?.theme ? toastConfig.theme : "colored"}
+        theme={toastConfig?.theme || "colored"}
       />
       {loading ? (
-        <div className="loader">
+        <div className="loader" role="status" aria-live="polite">
+          <span className="sr-only">Sending message</span>
           <ClockLoader
-            color={
-              clockLoaderConfig?.color ? clockLoaderConfig.color : "#333333"
-            }
-            loading={
-              clockLoaderConfig?.loading ? clockLoaderConfig.loading : true
-            }
-            size={clockLoaderConfig?.size ? clockLoaderConfig.size : 50}
-            aria-label={
-              clockLoaderConfig?.ariaLabel
-                ? clockLoaderConfig.ariaLabel
-                : "Loading Spinner"
-            }
-            data-testid={
-              clockLoaderConfig?.dataTestid
-                ? clockLoaderConfig.dataTestid
-                : "loader"
-            }
+            color={clockLoaderConfig?.color || "#333333"}
+            loading={clockLoaderConfig?.loading ?? true}
+            size={clockLoaderConfig?.size || 50}
+            aria-label={clockLoaderConfig?.ariaLabel || "Sending message"}
+            data-testid={clockLoaderConfig?.dataTestid || "loader"}
           />
         </div>
-      ) : (
-        <></>
-      )}
-    </div>
+      ) : null}
+    </section>
   );
 }

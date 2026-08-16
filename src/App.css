@@ -1,8 +1,14 @@
 :root {
   --dark-orange: #ff5823;
+  --text-orange: #f0561e;
   --white: #ffffff;
   --black: #333333;
   --toast-error: #e44f4ffa;
   --toast-success: #0cbfae;
   --back-ground: #fff8f2;
+  --line: rgba(51, 51, 51, 0.12);
+  --line-strong: rgba(51, 51, 51, 0.2);
+  --shadow-warm: 0 8px 24px rgba(51, 51, 51, 0.08);
+  --z-nav: 20;
+  --z-overlay: 40;
 }

@@ -4,7 +4,10 @@
   text-align: center;
   justify-content: center;
   min-height: fit-content;
-  padding: 15px 0 40px 0;
+  padding: 48px 16px 40px;
+  padding-left: max(16px, env(safe-area-inset-left));
+  padding-right: max(16px, env(safe-area-inset-right));
+  scroll-margin-top: calc(72px + env(safe-area-inset-top, 0px));
 }
 
 .contactme-parent {
@@ -12,155 +15,165 @@
   align-items: center;
   text-align: center;
   flex-direction: column;
-  width: 80%;
-}
-
-.title-text span {
-  font-weight: 50;
-  letter-spacing: 3px;
-  font-family: "Poppins Light";
-}
-
-.title-text h1 {
-  font-weight: bolder;
-  font-family: "Poppins Light";
-}
-
-.contactme-parent-border {
-  border: 2px solid var(--black);
-  height: 1px;
-  margin: 10px 0 0 0;
-  border-radius: 2%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.contactme-parent-border span {
-  background-color: var(--dark-orange);
-  height: 12px;
-  width: 25%;
-  z-index: 100;
-  position: relative;
-  display: block;
-  border-radius: 5px;
+  width: min(90%, 1180px);
 }
 
 .contactme-body {
-  display: flex;
-  justify-content: center;
-  margin: 30px;
+  display: grid;
+  grid-template-columns: minmax(220px, 0.85fr) minmax(0, 1.4fr);
+  gap: 40px;
+  align-items: start;
+  margin: 36px 0 0;
   text-align: left;
-  box-shadow: 2px 2px 2px 2px rgb(233, 233, 233);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-warm);
   border-radius: 10px;
-  padding: 15px;
-  width: 50%;
-  max-height: 70vh;
+  padding: 32px 36px;
+  width: 100%;
   background-color: var(--back-ground);
 }
 
-.contactme-body span {
-  color: var(--dark-orange);
+.contactme-intro h3 {
+  width: auto;
+  margin: 0 0 12px;
+  font-family: "Poppins Light";
+  font-weight: bolder;
+  font-size: 2rem;
+  line-height: 1.2;
 }
 
-.contactme-body h1 {
-  width: 40%;
+.contactme-intro span {
+  color: var(--text-orange);
+}
+
+.contactme-intro p {
+  margin: 0;
+  max-width: 28ch;
+  color: var(--black);
+  line-height: 1.6;
 }
 
 .contactme-body form {
-  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 4px;
 }
 
 .form-group {
   width: 100% !important;
+  margin-bottom: 14px;
 }
 
-.no-border {
-  border: 1px solid var(--dark-orange);
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--black);
+  font-family: "Poppins SemiBold";
+  font-size: 0.9rem;
+}
+
+.no-border,
+.contactme-body .form-control {
+  width: 100%;
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
   box-shadow: none;
-  outline: none !important;
+  min-height: 44px;
+  font-size: 16px;
+}
+
+.contactme-body textarea.no-border {
+  min-height: 140px;
+  resize: vertical;
 }
 
 .no-border:active,
-.no-border:focus {
+.no-border:focus,
+.no-border:focus-visible {
   border: 1px solid var(--dark-orange);
-  box-shadow: none;
-  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(255, 88, 35, 0.18);
+}
+
+.hp-field {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 .center {
   text-align: center;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.contactme-body .btn {
+  margin-top: 8px;
+  align-self: flex-start;
 }
 
-.contactme-body h1 {
-  margin-right: 10px;
-}
-
-@media screen and (max-width: 1110px) {
-}
-
-@media screen and (max-width: 910px) {
-  .contactme-parent {
-    width: 90%;
+@media screen and (max-width: 1023px) {
+  .contactme-container {
+    padding: 36px 12px 32px;
   }
 
   .contactme-body {
-    width: 60%;
-    flex-wrap: wrap;
-    margin: 15px;
-    padding: 10px;
+    gap: 28px;
+    padding: 28px 24px;
   }
 
-  .contactme-body form {
-    width: 80%;
-  }
-
-  .contactme-body h1 {
-    width: 100%;
-    text-align: center !important;
+  .contactme-intro h3 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
   }
 }
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 767px) {
   .contactme-body {
-    width: 100%;
-    flex-wrap: wrap;
-    margin: 15px;
-    padding: 10px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px 16px;
   }
 
-  .contactme-parent {
-    width: 90%;
+  .contactme-intro h3,
+  .contactme-intro p {
+    text-align: left;
   }
 
-  .contactme-body h1 {
-    width: 100%;
-    text-align: center !important;
+  .contactme-intro p {
+    max-width: none;
   }
 
-  .contactme-body form {
-    width: 80%;
+  .contactme-body .btn {
+    width: min(160px, 100%);
+    min-height: 44px;
+    padding: 11px 0;
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 479px) {
+  .contactme-container {
+    padding: 28px 10px 28px;
+  }
+
+  .contactme-body {
+    padding: 16px 12px;
+  }
+
+  .contactme-body .btn {
+    width: 100%;
+  }
 }
 
 .loader {
   display: flex;
   position: fixed;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
-  z-index: 9999;
+  z-index: 40;
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(2px);

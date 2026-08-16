@@ -44,8 +44,8 @@ const portfolio = {
         endDate: "September 2025",
         description: [
           "Core Logistics & Backend Development: Engineered the backend for a maritime logistics platform using Python (Django Rest Framework) and Scala (Slick), delivering 70+ APIs. These enabled critical functionalities including real-time fleet/shipment management, KPI dashboards, data synchronization, and advanced Reassign, Reconsign, and Optimize workflows.",
-          "Optimized API Performance: Reduced API latency by 20–30% through database-level pagination, advanced SQL queries (prefetching, DB-level filtering), and caching in Django, ensuring high responsiveness under load.",
-          "Full-Stack Collaboration & UI Contribution: Collaborated with the front-end team by co-designing API contracts for React/TypeScript features. Provided targeted contributions and bug fixes to the UI codebase, ensuring seamless end-to-end functionality and a cohesive user experience, improving delivery by 10–20%.",
+          "Optimized API Performance: Reduced API latency by 20-30% through database-level pagination, advanced SQL queries (prefetching, DB-level filtering), and caching in Django, ensuring high responsiveness under load.",
+          "Full-Stack Collaboration & UI Contribution: Collaborated with the front-end team by co-designing API contracts for React/TypeScript features. Provided targeted contributions and bug fixes to the UI codebase, ensuring seamless end-to-end functionality and a cohesive user experience, improving delivery by 10-20%.",
           "Centralized Authentication: Deployed a security model using Keycloak (JWTs) with custom user models, applying role-based permissions across Python/Scala microservices to secure operational data.",
           "Enhanced System Responsiveness & Automation: Leveraged Celery for critical asynchronous tasks (scheduling, reports, RPA syncs); automated real-time external data integration & synchronization (APIs, web scraping, cron jobs).",
           "Streamlined Dev & API Stability: Dockerized Python/Django/Scala services to simplify CI/CD and ensure reproducible environments; enhanced API stability with logging and error handling, making deployment and monitoring 1-time tasks.",
@@ -345,6 +345,7 @@ const portfolio = {
     projects: [
       {
         show: true,
+        thumb: "chatsql",
         projectTitle: [
           {
             title: "Voice-Driven Data Analyst",
@@ -355,7 +356,7 @@ const portfolio = {
         startDate: "Jul 2026",
         endDate: "Aug 2026",
         description: [
-          `Conversational BI assistant — ask in natural language, get validated SQL, answer, table & chart.`,
+          `Conversational BI assistant: ask in natural language, get validated SQL, answer, table and chart.`,
           `Next.js frontend with Recharts; FastAPI backend API with SSE streaming stages.`,
           `LangGraph agent: intent → entity linking → schema RAG → SQL generate/validate/execute → summarize.`,
           `PostgreSQL + pgvector for schema embeddings; OpenRouter for LLM & embedding models.`,
@@ -366,6 +367,7 @@ const portfolio = {
       },
       {
         show: true,
+        thumb: "form-builder",
         projectTitle: [
           {
             title: "Feedback Form Builder",
@@ -389,6 +391,7 @@ const portfolio = {
       },
       {
         show: true,
+        thumb: "task-manager",
         projectTitle: [
           {
             title: "Task Manager Application",
@@ -402,6 +405,7 @@ const portfolio = {
       },
       {
         show: true,
+        thumb: "robot-backend",
         projectTitle: [
           {
             title: "Robot on Mission",
@@ -424,6 +428,7 @@ const portfolio = {
       },
       {
         show: true,
+        thumb: "robot-frontend",
         projectTitle: [
           {
             title: "Robot on Mission",
@@ -446,6 +451,7 @@ const portfolio = {
       },
       {
         show: true,
+        thumb: "calendar",
         projectTitle: [
           {
             title: "Calendar",
@@ -467,6 +473,7 @@ const portfolio = {
       },
       {
         show: true,
+        thumb: "bmi",
         projectTitle: [
           {
             title: "BMI Calcuator",
@@ -486,6 +493,7 @@ const portfolio = {
       },
       {
         show: true,
+        thumb: "random-quote",
         projectTitle: [
           {
             title: "Random Quote",
@@ -503,6 +511,7 @@ const portfolio = {
       },
       {
         show: true,
+        thumb: "calculator",
         projectTitle: [
           {
             title: "Calculator",
@@ -520,6 +529,7 @@ const portfolio = {
       },
       {
         show: true,
+        thumb: "email-quote",
         projectTitle: [
           {
             title: "Email me a Quote",
@@ -538,6 +548,7 @@ const portfolio = {
       },
       {
         show: true,
+        thumb: "flex",
         projectTitle: [
           {
             title: "Flex in Css",
@@ -555,6 +566,7 @@ const portfolio = {
       },
       {
         show: true,
+        thumb: "todo",
         projectTitle: [
           {
             title: "Todo List App",
@@ -654,6 +666,7 @@ const portfolio = {
       },
       {
         show: true,
+        thumb: "contact-manager",
         projectTitle: [
           {
             title: "Contact Manager",

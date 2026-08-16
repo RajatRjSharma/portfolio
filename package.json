@@ -24,6 +24,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:ci": "react-scripts test --watchAll=false --ci --coverage",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --max-warnings=0",
+    "ci": "npm run lint && npm run test:ci && npm run build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -31,6 +34,29 @@
       "react-app",
       "react-app/jest"
     ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/index.js",
+      "!src/assets/**"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/src/assets/"
+    ],
+    "coverageReporters": [
+      "text",
+      "lcov"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 65,
+        "functions": 80,
+        "lines": 85,
+        "statements": 80
+      }
+    }
   },
   "browserslist": {
     "production": [
@@ -43,5 +69,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-react-app": "^7.0.1"
   }
 }

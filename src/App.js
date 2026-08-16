@@ -1,11 +1,14 @@
 import "./App.css";
+import ErrorBoundary from "./ErrorBoundary";
 import Home from "./PortfolioContainer/Home/Home";
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <ErrorBoundary>
+      <div className="App">
+        <Home />
+      </div>
+    </ErrorBoundary>
   );
 }
 

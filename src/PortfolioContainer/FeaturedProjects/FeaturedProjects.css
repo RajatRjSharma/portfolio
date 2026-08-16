@@ -1,0 +1,288 @@
+.featured-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  min-height: fit-content;
+  padding: 48px 16px 28px;
+  padding-left: max(16px, env(safe-area-inset-left));
+  padding-right: max(16px, env(safe-area-inset-right));
+  scroll-margin-top: calc(72px + env(safe-area-inset-top, 0px));
+}
+
+.featured-parent {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  width: min(90%, 1180px);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  width: 100%;
+  margin: 36px 0 0;
+  text-align: left;
+  align-items: stretch;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: 560px;
+  min-height: 560px;
+  max-height: 560px;
+  background-color: var(--back-ground);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: var(--shadow-warm);
+  overflow: hidden;
+}
+
+.project-card-shot,
+.project-card .project-thumb-fallback {
+  width: 100%;
+  height: 180px;
+  flex-shrink: 0;
+  object-fit: cover;
+  object-position: top center;
+  border: none;
+  border-bottom: 1px solid var(--line);
+  background-color: #1f2235;
+}
+
+.project-thumb-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 12px;
+  line-height: 1.3;
+  padding: 12px;
+  text-align: center;
+}
+
+.project-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px 20px 22px;
+  flex: 1;
+  min-height: 0;
+}
+
+.project-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.project-card-title {
+  margin: 0;
+  color: var(--text-orange);
+  font-family: "Poppins SemiBold";
+  font-size: 1.05rem;
+  line-height: 1.35;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+  min-width: 0;
+  flex: 1 1 140px;
+}
+
+.project-card-stack {
+  margin: 0;
+  color: var(--black);
+  font-size: 0.85rem;
+  line-height: 1.4;
+  flex-shrink: 0;
+}
+
+.featured-date {
+  font-size: 10px;
+  padding: 5px 10px;
+  color: var(--white);
+  background-color: var(--dark-orange);
+  border-radius: 15px;
+  white-space: nowrap;
+  height: fit-content;
+}
+
+.featured-points {
+  list-style: none;
+  margin: 0;
+  padding: 0 6px 0 0;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.featured-points::-webkit-scrollbar {
+  width: 6px;
+}
+
+.featured-points::-webkit-scrollbar-thumb {
+  background-color: rgba(51, 51, 51, 0.28);
+  border-radius: 6px;
+}
+
+.featured-points::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.featured-points li {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 0 10px;
+  color: var(--black);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.featured-points li:last-child {
+  margin-bottom: 0;
+}
+
+.featured-points i {
+  font-size: x-small;
+  margin: 7px 10px 0 0;
+  color: var(--black);
+  flex-shrink: 0;
+}
+
+.project-pane-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 8px;
+  flex-shrink: 0;
+}
+
+.featured-cta {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  width: 140px;
+  max-width: 100%;
+  padding: 11px 0;
+}
+
+.featured-cta:hover {
+  background-color: cornsilk;
+  color: #111;
+  text-decoration: none;
+}
+
+.project-pager {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+.project-pager-status {
+  font-family: "Poppins SemiBold";
+  color: var(--black);
+  min-width: 4.5rem;
+}
+
+.project-pager .btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .project-card {
+    transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .project-card:hover {
+    transform: translateY(-3px);
+  }
+
+  .featured-cta:active,
+  .project-pager .btn:active:not(:disabled) {
+    transform: translateY(2px);
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .project-card {
+    height: 520px;
+    min-height: 520px;
+    max-height: 520px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .featured-container {
+    padding: 36px 12px 24px;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .project-card-shot,
+  .project-card .project-thumb-fallback {
+    height: 160px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .project-card {
+    height: 500px;
+    min-height: 500px;
+    max-height: 500px;
+  }
+
+  .project-pager {
+    flex-wrap: wrap;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .project-pager .btn {
+    width: min(140px, 42vw);
+    padding: 11px 0;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .featured-container {
+    padding: 28px 10px 20px;
+  }
+
+  .project-card {
+    height: 480px;
+    min-height: 480px;
+    max-height: 480px;
+  }
+
+  .project-card-body {
+    padding: 14px;
+  }
+
+  .project-pane-actions .featured-cta {
+    width: 100%;
+  }
+
+  .project-pager-status {
+    width: 100%;
+    order: -1;
+  }
+}

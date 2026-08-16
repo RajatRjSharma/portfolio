@@ -1,67 +1,78 @@
-import React from "react";
+import React, { memo, useCallback, useMemo } from "react";
 import { TypeAnimation } from "react-type-animation";
+import usePrefersReducedMotion from "../../hooks/usePrefersReducedMotion";
+import ExternalLink from "../../utils/ExternalLink";
+import profilePhoto from "../../assets/profile/profilephoto.jpg";
 import "./Profile.css";
 
-export default function Profile({ profile }) {
-  function scrollToContact() {
-    document.getElementById("contact-form").scrollIntoView({
-      behavior: "smooth",
+function Profile({ profile }) {
+  const prefersReducedMotion = usePrefersReducedMotion();
+  const fullName = profile?.fullname || "Rajat Kumar Sharma";
+  const skills = profile?.profileSkills?.skills;
+  const skillTime = profile?.profileSkills?.skillTime || 1000;
+
+  const typeSequence = useMemo(
+    () => (skills || []).flatMap((skill) => [skill, skillTime]),
+    [skills, skillTime]
+  );
+
+  const scrollToContact = useCallback(() => {
+    document.getElementById("contact-form")?.scrollIntoView({
+      behavior: prefersReducedMotion ? "auto" : "smooth",
     });
-  }
+  }, [prefersReducedMotion]);
 
   return (
-    <div className="profile-container">
+    <header className="profile-container">
       <div className="profile-parent">
         <div className="profile-details">
           <div className="colz">
             <div className="colz-icon">
-              <a
-                href={profile?.links?.github ? profile.links.github : "#"}
-                target="_blank"
-                rel="noopener noreferrer"
+            <ExternalLink
+                href={profile?.links?.github}
+                ariaLabel="GitHub"
               >
-                <i className="fab fa-github"></i>
-              </a>
-              <a
-                href={profile?.links?.linkedin ? profile.links.linkedin : "#"}
-                target="_blank"
-                rel="noopener noreferrer"
+                <i className="fab fa-github" aria-hidden="true"></i>
+              </ExternalLink>
+              <ExternalLink
+                href={profile?.links?.linkedin}
+                ariaLabel="LinkedIn"
               >
-                <i className="fab fa-linkedin"></i>
-              </a>
-              <a
-                href={profile?.links?.instagram ? profile.links.instagram : "#"}
-                target="_blank"
-                rel="noopener noreferrer"
+                <i className="fab fa-linkedin" aria-hidden="true"></i>
+              </ExternalLink>
+              <ExternalLink
+                href={profile?.links?.instagram}
+                ariaLabel="Instagram"
               >
-                <i className="fab fa-instagram"></i>
-              </a>
+                <i className="fab fa-instagram" aria-hidden="true"></i>
+              </ExternalLink>
             </div>
           </div>
           <div className="profile-details-name">
             <span className="primary-text">
-              {" "}
-              Hello, I'm{" "}
-              <span className="highlighted-text">
-                {profile?.fullname ? profile.fullname : "Rajat Kumar Sharma"}
-              </span>
+              Hello, I'm <span className="highlighted-text">{fullName}</span>
             </span>
           </div>
           <div className="profile-details-role">
             <span className="primary-text">
-              {" "}
               <h1>
-                {" "}
-                <TypeAnimation
-                  sequence={profile?.profileSkills?.skills
-                    .join(`,${profile?.profileSkills?.skillTime},`)
-                    .split(",")
-                    .map((value) => (+value ? +value : value))}
-                  repeat={Infinity}
-                  wrapper="span"
-                  speed={50}
-                  style={{ display: "inline-block" }}
-                />
+                <span className="sr-only">
+                  {skills?.[0] || "Software Engineer"}
+                </span>
+                {prefersReducedMotion || typeSequence.length === 0 ? (
+                  <span aria-hidden="true">
+                    {skills?.[0] || "Software Engineer"}
+                  </span>
+                ) : (
+                  <TypeAnimation
+                    sequence={typeSequence}
+                    repeat={Infinity}
+                    wrapper="span"
+                    speed={50}
+                    aria-hidden="true"
+                    style={{ display: "inline-block" }}
+                  />
+                )}
               </h1>
               <span className="profile-role-tagline">
                 {profile?.profileTagline}
@@ -69,22 +80,36 @@ export default function Profile({ profile }) {
             </span>
           </div>
           <div className="profile-options">
-            <button className="btn primary-btn" onClick={scrollToContact}>
+            <button
+              type="button"
+              className="btn primary-btn"
+              onClick={scrollToContact}
+            >
               Contact Me
             </button>
             <a
-              href="resume.pdf"
-              rel="noopener noreferrer"
+              className="btn highlighted-btn"
+              href="/resume.pdf"
               download="Rajat_Kumar_Sharma_Resume.pdf"
             >
-              <button className="btn highlighted-btn">Get Resume</button>
+              Get Resume
             </a>
           </div>
         </div>
         <div className="profile-picture">
-          <div className="profile-picture-background"></div>
+          <img
+            className="profile-picture-background"
+            src={profilePhoto}
+            alt={`${fullName}, software engineer`}
+            width={350}
+            height={350}
+            fetchpriority="high"
+            decoding="async"
+          />
         </div>
       </div>
-    </div>
+    </header>
   );
 }
+
+export default memo(Profile);
