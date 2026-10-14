@@ -87,7 +87,7 @@ const portfolio = {
         link: "https://api.growthschool.io/certificate/ce875b50-da24-472a-85b4-cdceefde34b3/outskill",
         course: "AI Engineering Fellowship",
         startDate: "Nov 2025",
-        endDate: "May 2026",
+        endDate: "Aug 2026",
         description: [`Generative AI Engineering Fellowship`],
       },
       {
