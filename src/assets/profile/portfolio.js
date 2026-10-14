@@ -88,7 +88,12 @@ const portfolio = {
         course: "AI Engineering Fellowship",
         startDate: "Nov 2025",
         endDate: "Aug 2026",
-        description: [`Generative AI Engineering Fellowship`],
+        description: [
+          `Completed Generative AI Engineering Fellowship covering LLMs, prompt engineering, RAG, and multimodal AI.`,
+          `Built AI agents using LangChain, LangGraph, Agno, OpenAI Agents SDK, and MCP.`,
+          `Implemented observability with LangSmith.`,
+          `Deployed applications with FastAPI, Streamlit, Docker, and Modal.`,
+        ],
       },
       {
         institute: "Lovely Professional University",
