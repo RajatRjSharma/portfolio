@@ -31,9 +31,9 @@ const portfolio = {
         startDate: "September 2025",
         endDate: "present",
         description: [
-          "Dashboard & Analytics Workflows: Built backend APIs and React (Vite, TanStack Router/Query) dashboards with FastAPI, MS SQL, and SQLAlchemy, delivering real-time visibility into 500+ daily appointments across 20+ clinics, reducing manual reporting time by 70% and enabling data-driven operational decisions.",
-          "Scheduling & Workflow Engine: Architected Azure-hosted FastAPI microservices with SQLAlchemy/Alembic managing 5K+ monthly appointments across a multi-tenant healthcare platform serving 2 providers, achieving 99.5% uptime and reducing double-booking incidents by 85%.",
-          "SMS Communications & Automation: Developed Twilio SMS automation delivering 15K+ monthly messages (reminders, follow-ups) via Dockerized services provisioned with Terraform, reducing no-show rates by 25% and saving 10+ manual hours weekly through automated patient engagement.",
+          "Dashboard & Analytics Workflows: Built backend APIs and React (Vite, TanStack Router/Query) dashboards with FastAPI, MS SQL, and SQLAlchemy, delivering real-time visibility into 500+ daily appointments across 50+ clinics, reducing manual reporting time by 70% and enabling data-driven operational decisions.",
+          "Scheduling & Workflow Engine: Architected Azure-hosted FastAPI microservices with SQLAlchemy/Alembic managing 10K+ monthly appointments across a multi-tenant healthcare platform serving 1000+ providers, achieving 99.5% uptime and reducing double-booking incidents by 99%.",
+          "SMS Communications & Automation: Developed Twilio SMS automation delivering 100k+ monthly messages (reminders, follow-ups) via Dockerized services provisioned with Terraform, reducing no-show rates by 25% and saving 10+ manual hours weekly through automated patient engagement.",
         ],
       },
       {
@@ -84,7 +84,7 @@ const portfolio = {
     education: [
       {
         institute: "Outskill",
-        link: "https://www.outskill.com/",
+        link: "https://api.growthschool.io/certificate/ce875b50-da24-472a-85b4-cdceefde34b3/outskill",
         course: "AI Engineering Fellowship",
         startDate: "Nov 2025",
         endDate: "May 2026",
