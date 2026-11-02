@@ -348,12 +348,12 @@ const portfolio = {
       {
         skill: "Kubernetes",
         scale: "50",
-        icon: "fab fa-circle",
+        icon: "fas fa-circle",
       },
       {
         skill: "Redis",
         scale: "50",
-        icon: "fab fa-circle",
+        icon: "fas fa-circle",
       }
     ],
 
