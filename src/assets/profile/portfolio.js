@@ -345,6 +345,16 @@ const portfolio = {
         scale: "50",
         icon: "fas fa-flask",
       },
+      {
+        skill: "Kubernetes",
+        scale: "50",
+        icon: "fab fa-circle",
+      },
+      {
+        skill: "Redis",
+        scale: "50",
+        icon: "fab fa-circle",
+      }
     ],
 
     projects: [
